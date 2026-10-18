@@ -1,0 +1,12 @@
+
+.DS_Store
+*.lock
+*.venv
+*.ipynb
+*.pyc
+.vscode
+.claude
+.omc
+.env
+comments/
+audit/

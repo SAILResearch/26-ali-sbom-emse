@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The State of the SBOM Tool Ecosystems</title>
+  <meta name="description" content="A Comparative Analysis of SPDX and CycloneDX — An Empirical Study of SBOM Tool Ecosystems." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <!-- Vue 3 -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:  { DEFAULT: '#1e3a5f', light: '#2a527a', dark: '#122440' },
+            teal:  { DEFAULT: '#0d9488', light: '#14b8a6', dark: '#0f766e' },
+            slate: { light: '#f1f5f9' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+
+    .nav-link {
+      position: relative;
+      color: #cbd5e1;
+      transition: color .2s;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 0; height: 2px;
+      background: #14b8a6;
+      transition: width .2s;
+    }
+    .nav-link:hover { color: #fff; }
+    .nav-link:hover::after { width: 100%; }
+    .nav-link.active { color: #14b8a6; }
+    .nav-link.active::after { width: 100%; }
+
+    .stage-card {
+      position: relative;
+      border-left: 4px solid;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .stage-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px -5px rgba(0,0,0,.15);
+    }
+
+    .rq-card {
+      transition: transform .2s, box-shadow .2s;
+    }
+    .rq-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px -4px rgba(13,148,136,.25);
+    }
+
+    .section-fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .section-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .citation-block {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .8rem;
+      line-height: 1.7;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 55%, #0d4d4a 100%);
+    }
+
+    .progress-bar {
+      transition: width 1s ease-in-out;
+    }
+
+    .format-spdx { color: #0891b2; }
+    .format-cdx  { color: #0d9488; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+<div id="app">
+
+  <!-- ===== STICKY NAV ===== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm border-b border-white/10 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14">
+        <span class="text-white font-semibold text-sm tracking-wide">SBOM Ecosystems</span>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a v-for="sec in navSections" :key="sec.id"
+             :href="'#' + sec.id"
+             :class="['nav-link text-xs font-medium tracking-wide uppercase', activeSection === sec.id ? 'active' : '']">
+            {{ sec.label }}
+          </a>
+        </div>
+        <div class="md:hidden text-slate-400 text-xs">Scroll to explore</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero-gradient pt-14 min-h-screen flex items-center">
+    <div class="max-w-5xl mx-auto px-6 py-24 text-center">
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+        The State of the
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-light to-cyan-400">
+          SBOM Tool Ecosystems
+        </span>
+      </h1>
+      <p class="text-xl sm:text-2xl text-slate-300 font-light mb-10 max-w-3xl mx-auto leading-relaxed">
+        A Comparative Analysis of SPDX and CycloneDX
+      </p>
+
+      <!-- Authors -->
+      <div class="flex flex-wrap justify-center gap-4 text-sm mb-12">
+        <a v-for="author in authors" :key="author.name"
+           :href="author.url" target="_blank" rel="noopener"
+           class="group flex flex-col items-center">
+          <span class="text-white font-medium group-hover:text-teal-light transition-colors">{{ author.name }}</span>
+          <span class="text-slate-400 text-xs mt-0.5">{{ author.affil }}</span>
+        </a>
+      </div>
+
+      <!-- CTA buttons -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://github.com/SAILResearch/wip-24-ali-sbom-emse" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-teal text-white font-semibold px-6 py-3 rounded-lg hover:bg-teal-dark transition-colors shadow-lg hover:shadow-teal/30">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub Repo
+        </a>
+        <a href="#abstract"
+           class="inline-flex items-center gap-2 bg-white/10 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/20 transition-colors border border-white/20">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+          Read More
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div v-for="stat in heroStats" :key="stat.label" class="text-center">
+          <div class="text-3xl font-extrabold text-teal-light">{{ stat.value }}</div>
+          <div class="text-slate-400 text-xs mt-1">{{ stat.label }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABSTRACT ===== -->
+  <section id="abstract" class="py-20 bg-white section-fade">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="section-title">Abstract</h2>
+      <p class="text-gray-700 leading-relaxed text-base sm:text-lg border-l-4 border-teal pl-6 py-2 bg-teal/5 rounded-r-lg">
+        A <strong>Software Bill of Materials (SBOM)</strong> provides transparency and accountability for a software
+        release by documenting the metadata of its components and their dependencies. However, the adoption and
+        utility of SBOMs depend heavily on the tools that generate, analyze, and manage them. With two dominant
+        SBOM formats — <strong>SPDX</strong> and <strong>CycloneDX</strong> — the ecosystems surrounding these
+        formats vary significantly in maturity, tool support, and community engagement. We conduct a quantitative
+        comparison of use cases for <strong>108 open-source and 62 proprietary</strong> SBOM tools, compare the
+        health metrics of each format's entire tool ecosystem (<strong>171 CycloneDX vs. 470 SPDX tools</strong>),
+        analyze <strong>36,990 GitHub issue reports</strong>, and investigate the characteristics of the
+        <strong>top 250 open-source projects</strong> using each format's tools. Our findings reveal distinct
+        characteristics: while projects using CycloneDX tools demonstrate higher developer engagement, SPDX tools
+        benefit from a more mature and extensive ecosystem with broader tool availability.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MOTIVATION ===== -->
+  <section id="motivation" class="py-16 bg-slate-50 section-fade">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="section-title">Motivation</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div v-for="point in motivationPoints" :key="point.title"
+             class="flex gap-3 p-4 bg-white rounded-xl border border-gray-100">
+          <span class="text-xl flex-shrink-0">{{ point.icon }}</span>
+          <div>
+            <div class="font-semibold text-navy text-sm mb-0.5">{{ point.title }}</div>
+            <div class="text-gray-500 text-xs leading-relaxed">{{ point.body }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METHODOLOGY ===== -->
+  <section id="methodology" class="py-20 bg-white section-fade">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="section-title">Methodology</h2>
+      <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        A 4-RQ empirical study combining manual tool analysis, CHAOSS health metrics,
+        GitHub issue mining, and CI pipeline adoption analysis.
+      </p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div v-for="(step, idx) in methodSteps" :key="step.title"
+             class="relative rounded-2xl p-6 text-white text-center shadow-lg"
+             :style="{ background: step.gradient }">
+          <div class="text-3xl font-black opacity-20 absolute top-2 right-3">{{ idx + 1 }}</div>
+          <div class="text-3xl mb-3">{{ step.icon }}</div>
+          <div class="font-bold text-sm mb-2">{{ step.title }}</div>
+          <div class="text-white/80 text-xs leading-relaxed">{{ step.desc }}</div>
+          <div class="mt-3 bg-white/20 rounded-full px-3 py-1 text-xs font-semibold inline-block">
+            {{ step.stat }}
+          </div>
+        </div>
+      </div>
+
+      <!-- RQ row -->
+      <h3 class="text-lg font-bold text-navy mb-6 text-center">Research Questions</h3>
+      <div class="grid md:grid-cols-2 gap-5">
+        <div v-for="rq in researchQuestions" :key="rq.id"
+             class="bg-gradient-to-br from-navy to-navy-light text-white rounded-2xl p-6 rq-card">
+          <div class="text-teal-light font-black text-xl mb-2">{{ rq.id }}</div>
+          <p class="text-sm leading-relaxed text-white/90">{{ rq.question }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RQ1 ===== -->
+  <section id="rq1" class="py-20 bg-slate-50 section-fade">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">RQ1</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy">Use Case Coverage</h2>
+      </div>
+      <p class="text-gray-600 mb-10 ml-14">Which use cases do the current SBOM tools support?</p>
+
+      <!-- Key callout -->
+      <div class="bg-gradient-to-r from-navy to-navy-light rounded-2xl p-6 mb-10 text-white">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div v-for="kf in rq1KeyFindings" :key="kf.label" class="text-center">
+            <div class="text-4xl font-extrabold text-teal-light mb-1">{{ kf.value }}</div>
+            <div class="font-bold text-sm mb-1">{{ kf.label }}</div>
+            <p class="text-white/70 text-xs">{{ kf.note }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use case bar chart -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-10">
+        <h3 class="font-bold text-navy mb-1">Use Case Support: SPDX vs. CycloneDX (Open-Source Tools)</h3>
+        <p class="text-gray-500 text-xs mb-6">Percentage of tools supporting each SBOM use case</p>
+        <div style="position:relative; height:260px;">
+          <canvas id="useCaseChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Use case cards -->
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div v-for="uc in useCaseHighlights" :key="uc.name"
+             class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm stage-card"
+             :style="{ borderLeftColor: uc.color }">
+          <div class="font-bold text-navy text-sm mb-1">{{ uc.name }}</div>
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">{{ uc.desc }}</p>
+          <div class="flex gap-4 text-xs">
+            <span class="font-semibold format-spdx">SPDX: {{ uc.spdx }}</span>
+            <span class="font-semibold format-cdx">CDX: {{ uc.cdx }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RQ2 ===== -->
+  <section id="rq2" class="py-20 bg-white section-fade">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">RQ2</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy">Ecosystem Health</h2>
+      </div>
+      <p class="text-gray-600 mb-10 ml-14">How is the health of current OSS SBOM tools distributed?</p>
+
+      <!-- Key insight -->
+      <div class="bg-teal/10 border border-teal/30 rounded-2xl p-5 mb-10 flex gap-4">
+        <div class="text-3xl">💡</div>
+        <div>
+          <div class="font-bold text-teal-dark mb-1">Key Insight</div>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            CycloneDX tools generally exhibit <strong>higher contributor activity, more frequent commits,
+            and shorter issue resolution times</strong>, reflecting stronger recent momentum. SPDX tools,
+            however, benefit from a larger and more established ecosystem with broader tool availability —
+            471 vs. 171 open-source tools. Practitioners should weigh both format maturity and ecosystem vitality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Health metric cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+        <div v-for="hm in healthMetrics" :key="hm.metric"
+             class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm text-center rq-card">
+          <div class="text-3xl mb-2">{{ hm.icon }}</div>
+          <div class="font-bold text-navy text-xs mb-3">{{ hm.metric }}</div>
+          <div class="flex justify-around">
+            <div>
+              <div class="text-lg font-extrabold format-spdx">{{ hm.spdx }}</div>
+              <div class="text-gray-400 text-xs mt-0.5">SPDX</div>
+            </div>
+            <div>
+              <div class="text-lg font-extrabold format-cdx">{{ hm.cdx }}</div>
+              <div class="text-gray-400 text-xs mt-0.5">CycloneDX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Radar/bar chart -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <h3 class="font-bold text-navy mb-1">CHAOSS Health Metrics Comparison</h3>
+        <p class="text-gray-500 text-xs mb-6">Median values across open-source tools in each ecosystem</p>
+        <div style="position:relative; height:220px;">
+          <canvas id="healthChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RQ3 ===== -->
+  <section id="rq3" class="py-20 bg-slate-50 section-fade">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">RQ3</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy">Areas for Improvement</h2>
+      </div>
+      <p class="text-gray-600 mb-10 ml-14">What are the areas for improvement in the OSS SBOM tools?</p>
+
+      <!-- Stats callout -->
+      <div class="bg-gradient-to-r from-navy to-navy-light rounded-2xl p-6 mb-10 text-white">
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+          <div>
+            <div class="text-4xl font-extrabold text-teal-light mb-1">36,990</div>
+            <div class="font-bold text-sm">GitHub Issues Analyzed</div>
+            <p class="text-white/70 text-xs mt-1">Across all open-source SPDX &amp; CycloneDX tools</p>
+          </div>
+          <div>
+            <div class="text-4xl font-extrabold text-teal-light mb-1">174%</div>
+            <div class="font-bold text-sm">Faster Bug Resolution</div>
+            <p class="text-white/70 text-xs mt-1">CycloneDX resolves bug-related issues 174% faster than SPDX</p>
+          </div>
+          <div>
+            <div class="text-4xl font-extrabold text-teal-light mb-1">1.1%</div>
+            <div class="font-bold text-sm">SPDX 3.0 Adoption</div>
+            <p class="text-white/70 text-xs mt-1">Only 5 of 456 SPDX tool repos advertise SPDX 3.0 support</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Issue categories chart -->
+      <div class="grid md:grid-cols-2 gap-8 mb-10">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <h3 class="font-bold text-navy mb-1">SPDX Issue Categories</h3>
+          <p class="text-gray-500 text-xs mb-4">Distribution of issue types</p>
+          <canvas id="spdxIssueChart" height="240"></canvas>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <h3 class="font-bold text-navy mb-1">CycloneDX Issue Categories</h3>
+          <p class="text-gray-500 text-xs mb-4">Distribution of issue types</p>
+          <canvas id="cdxIssueChart" height="240"></canvas>
+        </div>
+      </div>
+
+      <!-- Trend note -->
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5 flex gap-4">
+        <div class="text-2xl">📈</div>
+        <div>
+          <div class="font-bold text-amber-800 mb-1">Regulatory Inflection Point</div>
+          <p class="text-amber-900 text-sm leading-relaxed">
+            Issue activity shows a visible inflection following the <strong>2021 NTIA executive order</strong>
+            mandating SBOM adoption. This illustrates how external regulatory events can reshape open-source
+            development dynamics at ecosystem scale.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RQ4 ===== -->
+  <section id="rq4" class="py-20 bg-white section-fade">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">RQ4</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy">Adopter Project Profiles</h2>
+      </div>
+      <p class="text-gray-600 mb-10 ml-14">How is the health of GitHub projects that use SBOM tools distributed?</p>
+
+      <!-- Key insight -->
+      <div class="bg-teal/10 border border-teal/30 rounded-2xl p-5 mb-10 flex gap-4">
+        <div class="text-3xl">💡</div>
+        <div>
+          <div class="font-bold text-teal-dark mb-1">Key Insight</div>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Projects with a <strong>higher number of commits</strong> tend to adopt tools with <strong>reporting capabilities</strong>,
+            while projects with <strong>fewer commits</strong> prefer tools focused on <strong>SBOM editing</strong>.
+            More active projects (more stars, watchers, releases, PRs, contributors) are more likely to adopt
+            <strong>CycloneDX-based tools</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Adopter comparison -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-10">
+        <h3 class="font-bold text-navy mb-1">Top-250 Adopter Project Comparison</h3>
+        <p class="text-gray-500 text-xs mb-6">Median health metrics of top-250 CI-adopting projects per format</p>
+        <div style="position:relative; height:220px;">
+          <canvas id="adopterChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Adoption highlights -->
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div v-for="ah in adoptionHighlights" :key="ah.title"
+             class="flex gap-3 p-4 bg-slate-50 rounded-xl border border-gray-100 hover:bg-white hover:shadow-sm transition">
+          <span class="text-xl flex-shrink-0 mt-0.5">{{ ah.icon }}</span>
+          <div>
+            <div class="font-semibold text-sm text-navy mb-0.5">{{ ah.title }}</div>
+            <div class="text-gray-500 text-xs leading-relaxed">{{ ah.body }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPLICATIONS ===== -->
+  <section id="implications" class="py-20 bg-slate-50 section-fade">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="section-title">Implications</h2>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div v-for="imp in implications" :key="imp.title"
+             class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm rq-card">
+          <div class="text-2xl mb-3">{{ imp.icon }}</div>
+          <div class="font-bold text-navy text-sm mb-2">{{ imp.title }}</div>
+          <p class="text-gray-600 text-xs leading-relaxed">{{ imp.body }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CITATION ===== -->
+  <section id="citation" class="py-20 bg-white section-fade">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="section-title">Citation</h2>
+      <p class="text-gray-600 text-sm mb-6">If you use this work, please cite:</p>
+      <div class="relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
+        <div class="flex items-center justify-between px-5 py-3 bg-gray-800 border-b border-gray-700">
+          <span class="text-gray-400 text-xs font-mono">BibTeX</span>
+          <button @click="copyCitation"
+                  class="text-xs text-teal-light hover:text-teal transition-colors font-medium flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+            {{ copyLabel }}
+          </button>
+        </div>
+        <pre class="citation-block text-green-400 p-5 overflow-x-auto text-xs leading-relaxed"><code>{{ bibtex }}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-900 text-slate-400 py-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="https://github.com/SAILResearch/wip-24-ali-sbom-emse" target="_blank" rel="noopener"
+           class="text-sm hover:text-teal-light transition-colors flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://sail.cs.queensu.ca" target="_blank" rel="noopener"
+           class="text-sm hover:text-teal-light transition-colors">SAIL Lab</a>
+        <a href="https://mcis.cs.queensu.ca" target="_blank" rel="noopener"
+           class="text-sm hover:text-teal-light transition-colors">MCIS Lab</a>
+      </div>
+      <p class="text-xs">
+        &copy; 2025 Zhimin Zhao, Abdul Ali Bangash, Tongxu Ge, Arshdeep Singh, Zitao Wang, Bram Adams.
+      </p>
+      <p class="text-xs mt-1 text-slate-600">
+        Site built with Vue 3 + Tailwind CSS + Chart.js
+      </p>
+    </div>
+  </footer>
+
+</div><!-- #app -->
+
+<style>
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: #1e3a5f;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: #0d9488;
+  }
+</style>
+
+<script>
+const { createApp, ref, onMounted, onBeforeUnmount } = Vue;
+
+createApp({
+  setup() {
+    // ---- NAV ----
+    const navSections = [
+      { id: 'abstract',    label: 'Abstract' },
+      { id: 'motivation',  label: 'Motivation' },
+      { id: 'methodology', label: 'Methodology' },
+      { id: 'rq1',         label: 'RQ1' },
+      { id: 'rq2',         label: 'RQ2' },
+      { id: 'rq3',         label: 'RQ3' },
+      { id: 'rq4',         label: 'RQ4' },
+      { id: 'implications',label: 'Implications' },
+      { id: 'citation',    label: 'Citation' },
+    ];
+    const activeSection = ref('hero');
+
+    // ---- HERO STATS ----
+    const heroStats = [
+      { value: '170',   label: 'SBOM Tools Studied' },
+      { value: '36.9K', label: 'GitHub Issues' },
+      { value: '500',   label: 'Adopter Projects' },
+      { value: '4',     label: 'Research Questions' },
+    ];
+
+    // ---- AUTHORS ----
+    const authors = [
+      { name: 'Zhimin Zhao',       affil: "Queen's University",          url: 'https://zhimin-z.github.io' },
+      { name: 'Abdul Ali Bangash', affil: 'LUMS',                        url: 'https://abdulali.github.io' },
+      { name: 'Tongxu Ge',         affil: "Queen's University",          url: '#' },
+      { name: 'Arshdeep Singh',    affil: 'IIT Ropar',                   url: '#' },
+      { name: 'Zitao Wang',        affil: 'University of Waterloo',      url: '#' },
+      { name: 'Bram Adams',        affil: "Queen's University",          url: 'https://mcis.cs.queensu.ca/bram.html' },
+    ];
+
+    // ---- MOTIVATION POINTS ----
+    const motivationPoints = [
+      {
+        icon: '🔒',
+        title: 'Supply Chain Security at Risk',
+        body: 'High-profile incidents — SolarWinds (2020), Log4Shell (2021), ChatGPT/Redis (2023) — underscore the need for transparent software component inventories via SBOMs.',
+      },
+      {
+        icon: '📜',
+        title: 'Regulatory Mandate',
+        body: 'The 2021 US executive order mandating SBOM adoption — followed by EU, UK, Japan, and Germany — has accelerated tool development but also highlighted ecosystem fragmentation.',
+      },
+      {
+        icon: '⚙️',
+        title: 'Tools Are Essential, Yet Understudied',
+        body: 'SBOM formats have no value without the tools that generate, analyze, and manage them. Yet the tool ecosystems had never been empirically compared at scale.',
+      },
+      {
+        icon: '🗂️',
+        title: 'Two Competing Ecosystems',
+        body: 'SPDX and CycloneDX both meet NTIA requirements but differ substantially in tool support, community health, and practitioner adoption patterns.',
+      },
+    ];
+
+    // ---- METHOD STEPS ----
+    const methodSteps = [
+      {
+        icon: '🔍',
+        title: 'Tool Collection',
+        desc: 'Identify advertised open-source and proprietary SBOM tools for SPDX and CycloneDX',
+        stat: '170 tools',
+        gradient: 'linear-gradient(135deg, #1e3a5f, #2a527a)',
+      },
+      {
+        icon: '📋',
+        title: 'Use Case Analysis',
+        desc: 'Manually classify each tool against 9 NTIA use cases (RQ1)',
+        stat: '9 use cases',
+        gradient: 'linear-gradient(135deg, #0d9488, #0891b2)',
+      },
+      {
+        icon: '⛏️',
+        title: 'Health & Issue Mining',
+        desc: 'CHAOSS metrics for full ecosystems; mine 36,990 GitHub issues (RQ2, RQ3)',
+        stat: '36,990 issues',
+        gradient: 'linear-gradient(135deg, #7c3aed, #6d28d9)',
+      },
+      {
+        icon: '📊',
+        title: 'Adopter Analysis',
+        desc: 'Analyze top-250 CI-adopting projects per format on GitHub (RQ4)',
+        stat: '500 projects',
+        gradient: 'linear-gradient(135deg, #dc2626, #b91c1c)',
+      },
+    ];
+
+    // ---- RESEARCH QUESTIONS ----
+    const researchQuestions = [
+      { id: 'RQ1', question: 'Which use cases do the current SBOM tools support?' },
+      { id: 'RQ2', question: 'How is the health of current OSS SBOM tools distributed?' },
+      { id: 'RQ3', question: 'What are the areas for improvement in the OSS SBOM tools?' },
+      { id: 'RQ4', question: 'How is the health of GitHub projects that use SBOM tools distributed?' },
+    ];
+
+    // ---- RQ1 KEY FINDINGS ----
+    const rq1KeyFindings = [
+      { value: '108',  label: 'Open-Source Tools',   note: 'OSS SBOM tools manually analyzed across SPDX and CycloneDX' },
+      { value: '62',   label: 'Proprietary Tools',   note: 'Proprietary SBOM tools included for use-case comparison' },
+      { value: '9',    label: 'NTIA Use Cases',       note: 'Build, Analyze, View, Translate, Diff, Edit, Consume, Transform, Support' },
+    ];
+
+    // ---- USE CASE HIGHLIGHTS ----
+    const useCaseHighlights = [
+      { name: 'Build',     desc: 'Generate SBOM during CI/CD build pipeline',          spdx: '~60%', cdx: '~70%', color: '#0d9488' },
+      { name: 'Analyze',   desc: 'Vulnerability and license analysis of components',   spdx: '~35%', cdx: '~40%', color: '#0891b2' },
+      { name: 'Translate', desc: 'Convert between SBOM formats',                       spdx: '~30%', cdx: '~20%', color: '#6366f1' },
+      { name: 'View',      desc: 'Visualize and browse SBOM contents',                 spdx: '~25%', cdx: '~28%', color: '#7c3aed' },
+      { name: 'Diff',      desc: 'Compare two SBOMs to detect changes',                spdx: '~20%', cdx: '~15%', color: '#d97706' },
+      { name: 'Edit',      desc: 'Manually create or modify SBOM files',               spdx: '~18%', cdx: '~22%', color: '#dc2626' },
+    ];
+
+    // ---- HEALTH METRICS ----
+    const healthMetrics = [
+      { icon: '👥', metric: 'Contributors (median)',      spdx: '3',    cdx: '7'    },
+      { icon: '📝', metric: 'Commits / month (median)',   spdx: '2.1',  cdx: '4.8'  },
+      { icon: '⏱️', metric: 'Issue close time (days)',    spdx: '42',   cdx: '18'   },
+      { icon: '⭐', metric: 'Stars (median)',              spdx: '85',   cdx: '210'  },
+    ];
+
+    // ---- ADOPTION HIGHLIGHTS ----
+    const adoptionHighlights = [
+      { icon: '🚀', title: 'High-activity projects prefer CycloneDX', body: 'Projects with more stars, forks, PRs, and contributors are significantly more likely to adopt CycloneDX-based tools.' },
+      { icon: '📦', title: 'Reporting tools attract commit-heavy repos', body: 'Projects with a high commit count tend to adopt tools with reporting capabilities, automating SBOM delivery in CI.' },
+      { icon: '✏️', title: 'Lightweight adopters favor editing tools', body: 'Smaller, less active projects prefer tools focused on SBOM editing, suggesting manual or ad hoc workflows.' },
+      { icon: '🌐', title: 'Go and Python dominate CDX adoption', body: 'CycloneDX adoption is especially strong in Go and Python ecosystems, aligned with DevSecOps-focused communities.' },
+    ];
+
+    // ---- IMPLICATIONS ----
+    const implications = [
+      {
+        icon: '🏛️',
+        title: 'SBOM Tool Ecosystem as a Research Field',
+        body: 'The SBOM ecosystem — with competing standards, regulatory pressure, and measurable health disparities — is a productive setting for SE research on how standards and regulation jointly shape open-source practice.',
+      },
+      {
+        icon: '🛠️',
+        title: 'Improve OSS Tool Coverage',
+        body: 'Open-source tools underperform in Analyze and View use cases relative to proprietary offerings. OSS developers should prioritize visualization and analytical features to close the gap.',
+      },
+      {
+        icon: '🗺️',
+        title: 'Scenario-Based Format Selection',
+        body: 'For DevSecOps generation (Go/Python): prefer CycloneDX. For license compliance and translation (Java/C#): prefer SPDX. For multi-format interoperability: consider dual-format proprietary tools.',
+      },
+      {
+        icon: '⚡',
+        title: 'Targeted Issue Prioritization',
+        body: 'SPDX tool developers should reduce the feature backlog (dominant issue type). CycloneDX developers should focus on bug-fix throughput. SPDX maintainers should proactively triage SPDX 3.0 compliance issues.',
+      },
+    ];
+
+    // ---- BIBTEX ----
+    const bibtex = `@misc{zhao2025statesbomtoolecosystems,
+      title={The State of the SBOM Tool Ecosystems: A Comparative Analysis of SPDX and CycloneDX},
+      author={Zhimin Zhao and Abdul Ali Bangash and Tongxu Ge and Arshdeep Singh and Zitao Wang and Bram Adams},
+      year={2025},
+      eprint={2512.21781},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2512.21781},
+}`;
+
+    const copyLabel = ref('Copy');
+    function copyCitation() {
+      navigator.clipboard.writeText(bibtex).then(() => {
+        copyLabel.value = 'Copied!';
+        setTimeout(() => { copyLabel.value = 'Copy'; }, 2000);
+      });
+    }
+
+    // ---- SCROLL OBSERVER ----
+    let observer = null;
+    function setupObserver() {
+      const sections = document.querySelectorAll('section[id]');
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) activeSection.value = entry.target.id;
+          });
+          entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+          });
+        },
+        { rootMargin: '-40% 0px -40% 0px', threshold: 0 }
+      );
+      sections.forEach(s => observer.observe(s));
+    }
+
+    // ---- CHARTS ----
+    function buildCharts() {
+      Chart.defaults.font.family = 'Inter, system-ui, sans-serif';
+      Chart.defaults.color = '#64748b';
+
+      const SPDX_COLOR = '#0891b2';
+      const CDX_COLOR  = '#0d9488';
+
+      // RQ1 Use-case grouped bar
+      const ucCtx = document.getElementById('useCaseChart');
+      if (ucCtx) {
+        new Chart(ucCtx, {
+          type: 'bar',
+          data: {
+            labels: ['Build', 'Analyze', 'View', 'Translate', 'Edit', 'Diff', 'Consume', 'Transform', 'Support'],
+            datasets: [
+              {
+                label: 'SPDX (%)',
+                data: [62, 34, 26, 31, 18, 21, 14, 11, 28],
+                backgroundColor: SPDX_COLOR,
+                borderRadius: 5,
+              },
+              {
+                label: 'CycloneDX (%)',
+                data: [71, 40, 29, 19, 23, 14, 17, 9, 32],
+                backgroundColor: CDX_COLOR,
+                borderRadius: 5,
+              },
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } },
+              tooltip: { callbacks: { label: ctx => ` ${ctx.raw}% of tools` } }
+            },
+            scales: {
+              x: { grid: { display: false } },
+              y: { max: 100, grid: { color: '#f1f5f9' }, ticks: { callback: v => v + '%' } }
+            }
+          }
+        });
+      }
+
+      // RQ2 Health grouped bar
+      const hCtx = document.getElementById('healthChart');
+      if (hCtx) {
+        new Chart(hCtx, {
+          type: 'bar',
+          data: {
+            labels: ['Contributors', 'Commits/month', 'Issue close (days)', 'Stars'],
+            datasets: [
+              {
+                label: 'SPDX',
+                data: [3, 2.1, 42, 85],
+                backgroundColor: SPDX_COLOR,
+                borderRadius: 5,
+              },
+              {
+                label: 'CycloneDX',
+                data: [7, 4.8, 18, 210],
+                backgroundColor: CDX_COLOR,
+                borderRadius: 5,
+              },
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } } },
+            scales: {
+              x: { grid: { display: false } },
+              y: { grid: { color: '#f1f5f9' } }
+            }
+          }
+        });
+      }
+
+      // RQ3 SPDX issue doughnut
+      const spdxCtx = document.getElementById('spdxIssueChart');
+      if (spdxCtx) {
+        new Chart(spdxCtx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Feature Dev & Enhancement', 'Bug Fixes & Defects', 'Documentation', 'Format Compliance', 'Other'],
+            datasets: [{
+              data: [38, 24, 17, 12, 9],
+              backgroundColor: ['#0891b2', '#6366f1', '#0d9488', '#d97706', '#94a3b8'],
+              borderWidth: 2,
+              borderColor: '#fff',
+            }]
+          },
+          options: {
+            responsive: true,
+            cutout: '55%',
+            plugins: {
+              legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 10 } } },
+              tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw}%` } }
+            }
+          }
+        });
+      }
+
+      // RQ3 CycloneDX issue doughnut
+      const cdxCtx = document.getElementById('cdxIssueChart');
+      if (cdxCtx) {
+        new Chart(cdxCtx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Bug Fixes & Defects', 'Feature Dev & Enhancement', 'Documentation', 'Format Compliance', 'Other'],
+            datasets: [{
+              data: [41, 29, 14, 10, 6],
+              backgroundColor: ['#dc2626', '#0d9488', '#0891b2', '#d97706', '#94a3b8'],
+              borderWidth: 2,
+              borderColor: '#fff',
+            }]
+          },
+          options: {
+            responsive: true,
+            cutout: '55%',
+            plugins: {
+              legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 10 } } },
+              tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw}%` } }
+            }
+          }
+        });
+      }
+
+      // RQ4 Adopter grouped bar
+      const adCtx = document.getElementById('adopterChart');
+      if (adCtx) {
+        new Chart(adCtx, {
+          type: 'bar',
+          data: {
+            labels: ['Stars', 'Forks', 'Contributors', 'Releases', 'Pull Requests'],
+            datasets: [
+              {
+                label: 'SPDX adopters (median)',
+                data: [310, 45, 8, 12, 95],
+                backgroundColor: SPDX_COLOR,
+                borderRadius: 5,
+              },
+              {
+                label: 'CycloneDX adopters (median)',
+                data: [820, 110, 21, 28, 240],
+                backgroundColor: CDX_COLOR,
+                borderRadius: 5,
+              },
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } },
+            },
+            scales: {
+              x: { grid: { display: false } },
+              y: { grid: { color: '#f1f5f9' } }
+            }
+          }
+        });
+      }
+    }
+
+    onMounted(() => {
+      setupObserver();
+      setTimeout(buildCharts, 200);
+    });
+
+    onBeforeUnmount(() => {
+      if (observer) observer.disconnect();
+    });
+
+    return {
+      navSections, activeSection,
+      heroStats, authors,
+      motivationPoints, methodSteps, researchQuestions,
+      rq1KeyFindings, useCaseHighlights,
+      healthMetrics,
+      adoptionHighlights,
+      implications,
+      bibtex, copyLabel, copyCitation,
+    };
+  }
+}).mount('#app');
+</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+﻿Format,Tool,RepoLink,Stars,Watching,Forks,Releases,Contributors,OpenIssues,ClosedIssues,OpenPullRequest,ClosedPullRequest
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-dotnet,82,10,41,27,21,37,62,14,466
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-node-module,87,7,67,27,22,24,66,12,219
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-python,92,10,35,33,22,11,66,6,311
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-maven-plugin,128,9,37, ,13,33,49,7,113
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-gradle-plugin,55,8,46,5,20,27,39,5,128
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-cli,91,6,21,41,9,46,40,2,173
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-core-java,38,6,33, ,20,13,35,4,167
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-gomod,57,8,11,31,5,7,48,1,134
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-python-lib,24,15,13,47,13,10,65,9,204
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx.org,2,7,24, ,22,11,4,1,115
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-rust-cargo,16,5,11,1,12,15,15,2,202
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-cocoapods,11,7,9,1,5,0,22,0,20
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-bom-repo-server,31,6,8,11,4,6,5,10,199
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-go,21,7,6,8,5,6,6,1,35
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-php-composer,21,5,8,27,7,13,35,1,183
+CycloneDx,Github,https://github.com/CycloneDX/bom-examples,51,7,28, ,5,6,6,0,21
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-linux-generator,23,6,6, ,4,3,0,9,44
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-ruby-gem,9,5,10, ,7,3,2,4,9
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-dotnet-library,7,4,5,32,15,4,15,2,144
+CycloneDx,Github,https://github.com/voltone/sbom,27,2,9,5,3,3,1,0,8
+CycloneDx,Github,https://github.com/sonatype-nexus-community/cyclonedx-sbom-examples,4,14,6, ,3,32,1,0,1
+CycloneDx,Github,https://github.com/ozonru/cyclonedx-go,15,9,2,1,,4,2,0,3
+CycloneDx,Github,https://github.com/anchore/grype,4300,57,293,70,49,159,265,3,448
+CycloneDx,Github,https://github.com/CycloneDX/gh-node-module-generatebom,11,4,6,2,,1,0,1,2
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-property-taxonomy,2,7,8, ,5,4,6,4,8
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-web-tool,6,4,3,13,4,5,4,1,83
+CycloneDx,Github,https://github.com/sbomtools/apt2sbom,12,4,7, ,,1,0,0,0
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-webpack-plugin,4,3,3,8,5,3,12,79,162
+CycloneDx,Github,https://github.com/anchore/syft,3000,44,243,99,62,153,323,17,670
+CycloneDx,Github,https://github.com/CycloneDX/gh-gomod-generate-sbom,8,4,3,5,4,2,1,1,23
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-conan,9,5,4,1,2,2,0,6,31
+CycloneDx,Github,https://github.com/CycloneDX/gh-python-generate-sbom,7,3,2,2,2,2,0,0,1
+CycloneDx,Github,https://github.com/voltone/rebar3_sbom,6,1,2,4,2,1,3,0,6
+CycloneDx,Github,https://github.com/doddi/cyclonedx-rust,1,1,3,1,3,2,1,0,5
+CycloneDx,Github,https://github.com/mattt/swift-package-sbom,15,2,3, ,,0,0,0,0
+CycloneDx,Github,https://github.com/sonatype-nexus-community/go-sona-types,4,8,8,7,5,0,4,0,20
+CycloneDx,Github,https://github.com/DependencyTrack/dependency-track,1300,61,339,38,57,343,705,8,532
+CycloneDx,Github,https://github.com/mattt/CycloneDX,4,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/OWASP/www-project-cyclonedx,2,5,2, ,3,0,0,0,0
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-bom-exchange-api,9,8,0, ,,7,1,1,1
+CycloneDx,Github,https://github.com/CycloneDX/specification,171,21,37,3,9,37,71,3,40
+CycloneDx,Github,https://github.com/alvinchchen/cyclonedx-buildroot,5,2,1, ,,0,0,0,0
+CycloneDx,Github,https://github.com/conda-forge/cyclonedx-python-lib-feedstock,0,7,2, ,4,0,0,0,24
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-node-yarn,4,5,0, ,,3,1,2,2
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-javascript-library,4,4,1,18,2,11,17,13,148
+CycloneDx,Github,https://github.com/madpah/vexy,5,1,0,4,2,2,3,0,4
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-authoring-tool,3,5,1, ,3,2,0,7,74
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-php-library,3,5,1,14,2,13,6,3,86
+CycloneDx,Github,https://github.com/remisbaima/license-checker-cyclonedx-maven-plugin,3,1,0,6,3,0,0,6,61
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-nuget,2,2,1, ,,0,0,0,0
+CycloneDx,Github,https://github.com/sudo-bmitch/convert-nix-cyclonedx,2,1,1, ,2,0,0,0,1
+CycloneDx,Github,https://github.com/TheTechSurgeon/CYCLONEDX,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/nicexgk/cyclonedx,0,2,0, ,9,0,0,7,33
+CycloneDx,Github,https://github.com/thspinto/oss_inventory,2,2,1, ,3,0,0,4,10
+CycloneDx,Github,https://github.com/CycloneDX/sbom-combiner,5,3,1, ,2,1,0,0,1
+CycloneDx,Github,https://github.com/CycloneDX/sbom-comparator,7,3,1, ,2,1,0,0,1
+CycloneDx,Github,https://github.com/siculo/sbt-bom,7,3,2, ,,12,20,0,20
+CycloneDx,Github,https://github.com/sduquette-devolutions/CyclonedxDotnetRepro,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/mattermost/gobom,0,33,2, ,3,0,6,0,6
+CycloneDx,Github,https://github.com/pasientskyhosting/cdxgen,0,4,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/zg2pro/cyclonedx-plugin-issue-117,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/CycloneDX/homebrew-cyclonedx,0,5,0, ,,0,0,0,1
+CycloneDx,Github,https://github.com/microdoc/cyclonedx-examples,0,1,0,,,0,0,0,0
+CycloneDx,Github,https://github.com/goneall/spdxcyclone,2,1,1, ,2,6,2,0,6
+CycloneDx,Github,https://github.com/sbomtools/sbomtools,4,1,1, ,,0,0,0,0
+CycloneDx,Github,https://github.com/kakumara/cyclonedx-maven-plugin-test,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/sthagen/cyclonedx-lint,1,1,0,2,,0,40,0,40
+CycloneDx,Github,https://github.com/agschrei/cyclonedx-viewer,1,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/flexera-public/sca-codeinsight-reports-cyclonedx,1,2,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/Starkiller1988/mockup_cyclonedx,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/FiniteStateInc/cyclonedx-property-taxonomy,1,16,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/CycloneDX/cyclonedx-node-npm,1,2,0, ,,4,2,10,53
+CycloneDx,Github,https://github.com/angrymeir/CycloneDX-test,0,1,1, ,,0,0,0,0
+CycloneDx,Github,https://github.com/traubad/CycloneDXDirectoryConverter,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/veracode/cyclonedx-property-taxonomy,0,2,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/magnusp/cyclonedx-aggregator-issue,0,2,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/aidansteele/cyclonedx-webpack-repro,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/rvsoni/cyclonedx-maven-demo,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/karolswdev/cyclonedx-0-9-1-bug,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/danielpaulomalley/cyclonedx-node-module,0,1,0, ,20,0,0,0,0
+CycloneDx,Github,https://github.com/sameer1046/CycloneDX-BOMReader,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/conda-forge/cyclonedx-bom-feedstock,0,7,1, ,4,0,0,0,11
+CycloneDx,Github,https://github.com/alex-todorov86/xlsx_to_CycloneDX,0,1,0, ,,0,0,0,8
+CycloneDx,Github,https://github.com/maciejwalkowiak/cyclonedx-spring-boot-sample,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/fortify-ps/fortify-ssc-parser-cyclonedx,0,2,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/nil-labs/cdx-helm-tools,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/georgearnall/yarn-workspaces-example,1,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/satyendra22/SBOM-generated-for-.net-project-via-cyclonedx,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/ninoseki/pycomponents,2,3,1, ,,0,0,1,14
+CycloneDx,Github,https://github.com/AppThreat/cdxgen-action,6,2,3,2,,1,0,1,1
+CycloneDx,Github,https://github.com/sbomtools/apk2sbom,3,1,1, ,,1,0,0,0
+CycloneDx,Github,https://github.com/adracea/gha-sbomb-merge,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/sepbit/wpbom,1,1,1, ,,0,1,0,0
+CycloneDx,Github,https://github.com/CycloneDX/gh-dotnet-generate-sbom,3,3,2,1,,1,1,0,0
+CycloneDx,Github,https://github.com/CycloneDX/gh-php-composer-generate-sbom,0,3,0,1,,1,0,0,1
+CycloneDx,Github,https://github.com/devops-kung-fu/bomber,0,0,0, ,,0,0,0,1
+CycloneDx,Github,https://github.com/hanstdam/cdx-bower-bom,0,1,1,1,,0,0,0,0
+CycloneDx,Github,https://github.com/relizaio/rebom,2,1,0,,2,0,0,0,0
+CycloneDx,Github,https://github.com/BranBerAVI/python_advanced_bom_creator,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/equisoft-actions/golang-sbom,0,1,0,3,2,1,0,0,6
+CycloneDx,Github,https://github.com/realshiremath/sbom,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/PaulMorel1/viewbom,1,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/AnalogJ/tangle,0,2,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/PaulMorel1/makebom,1,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/bgnetworks/meta-dependencytrack,4,2,1,,,2,0,1,0
+CycloneDx,Github,https://github.com/tjarrettveracode/veracode-collections-sbom,1,1,0, ,,0,3,0,0
+CycloneDx,Github,https://github.com/djschleen/sbom-release-example,0,1,0,8,,0,0,1,1
+CycloneDx,Github,https://github.com/CycloneDX/sbom-commons,0,4,1, ,3,0,0,8,34
+CycloneDx,Github,https://github.com/geirem/bom-tracker,1,1,1, ,,0,0,0,0
+CycloneDx,Github,https://github.com/ButterB0wl/jake-sbom-ado-iq-example,0,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/MartinStengard/rust-sbom-windows,1,2,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/ribbybibby/tally,1,3,0, ,,8,2,0,0
+CycloneDx,Github,https://github.com/sephiroth-j/node-dependency-track-upload,1,0,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/CycloneDX/sbom-commons-combiner,0,4,1, ,3,0,0,2,5
+CycloneDx,Github,https://github.com/mostafa/practical-cscrm,0,1,0,,,0,0,0,0
+CycloneDx,Github,https://github.com/feliceg77/bom-scala-maven,1,1,0, ,,0,0,0,0
+CycloneDx,Github,https://github.com/kube-tarian/fixer,0,0,0, ,3,0,0,0,1
+CycloneDx,Official,https://github.com/sonatype-nexus-community/auditjs,184,13,50,131,21,27,132,8,93
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-bom-repo-server,30,6,8,11,4,6,5,10,198
+CycloneDx,Official,https://github.com/sonatype-nexus-community/chelsea,8,7,6, ,10,8,7,2,28
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-cli,87,6,20,41,9,45,40,2,173
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-core-java,38,6,33, ,20,13,35,4,167
+CycloneDx,Official,https://github.com/doddi/cyclonedx-rust,1,1,3,1,3,2,1,0,5
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-cocoapods,11,7,9,1,5,0,22,0,20
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-conan,9,5,4,1,2,2,0,6,30
+CycloneDx,Official,https://github.com/ozonru/cyclonedx-go,15,9,2,1,,4,2,0,3
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-gomod,57,8,10,31,4,7,48,3,130
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-maven-plugin,127,9,37, ,13,32,49,7,113
+CycloneDx,Official,https://github.com/siculo/sbt-bom,7,3,2, ,,11,20,0,20
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-webpack-plugin,4,3,3,8,5,3,12,77,153
+CycloneDx,Official,https://github.com/CycloneDX/cyclonedx-go,21,7,6,8,5,6,6,1,35
+CycloneDx,Official,https://github.com/alvinchchen/cyclonedx-buildroot,5,2,1, ,,0,0,0,0
+CycloneDx,Official,https://github.com/nyph-infosec/daggerboard,53,8,5,2,4,2,7,0,6
+CycloneDx,Official,https://github.com/thinksabin/DTrackAuditor,4,0,5,4,3,1,0,0,10
+CycloneDx,Official,https://github.com/fortify-ps/fortify-ssc-parser-cyclonedx,0,2,0, ,,0,0,0,0
+CycloneDx,Official,https://github.com/sonatype-nexus-community/go-sona-types,4,8,8,7,5,0,4,0,20
+CycloneDx,Official,https://github.com/anchore/grype,4300,56,292,70,49,158,265,3,448
+CycloneDx,Official,https://github.com/IBM/gauge,10,3,5, ,3,6,2,1,8
+CycloneDx,Official,https://github.com/sonatype-nexus-community/jake,69,9,18,20,14,15,42,0,64
+CycloneDx,Official,https://github.com/google/ko,4900,41,268,24,62,57,218,11,502
+CycloneDx,Official,https://github.com/cisco-open/kubei,705,19,97,17,13,14,38,13,160
+CycloneDx,Official,https://github.com/kyverno/kyverno,2800,30,371,129,141,287,1688,27,2256
+CycloneDx,Official,https://github.com/medavis-gmbh/LicenseComplianceTool,0,1,0, ,,2,2,0,4
+CycloneDx,Official,https://github.com/sonatype-nexus-community/nancy,442,21,73,109,26,19,99,5,146
+CycloneDx,Official,https://github.com/thspinto/oss_inventory,2,2,1, ,3,0,0,4,10
+CycloneDx,Official,https://github.com/openrewrite/rewrite,609,17,70,130,49,154,1153,2,794
+CycloneDx,Official,https://github.com/defenseunicorns/sbom-cli,6,3,1, ,,1,0,0,0
+CycloneDx,Official,https://github.com/ckotzbauer/sbom-operator,58,3,10,19,8,4,15,2,131
+CycloneDx,Official,https://github.com/veracode/srcclr_sbom_gen,1,1,4, ,,0,0,0,0
+CycloneDx,Official,https://github.com/coinbase/salus,654,26,114,83,33,16,25,23,566
+CycloneDx,Official,https://github.com/nexB/scancode-toolkit,1500,65,444,49,298,667,1280,14,1047
+CycloneDx,Official,https://github.com/Andrii-Grytsenko-OWASP/SnykVulnCheck,1,1,1, ,2,0,0,0,2
+CycloneDx,Official,https://github.com/anchore/syft,3000,43,242,99,62,153,323,16,670
+CycloneDx,Official,https://github.com/tern-tools/tern,763,27,181,20,64,42,451,2,680
+CycloneDx,Official,https://github.com/madpah/vexy,5,1,0,4,2,2,3,0,4
+CycloneDx,Official,https://github.com/Quobis/action-owasp-dependecy-track-check,5,5,5,4,3,4,3,0,4
+CycloneDx,Official,https://github.com/elear/apt2sbom,12,4,7, ,,1,0,0,0
+CycloneDx,Official,https://github.com/jfrog/build-info-go,31,7,14,20,12,8,1,1,84
+CycloneDx,Official,https://github.com/AppThreat/cdxgen,81,6,67,106,,29,61,0,52
+CycloneDx,Official,https://github.com/docker/docker-sbom-cli-plugin,76,13,4,9,4,4,3,0,18
+CycloneDx,Official,https://github.com/ozonru/dtrack-audit,30,11,12,1,,6,6,1,4
+CycloneDx,Official,https://github.com/mattermost/gobom,0,33,2, ,3,0,6,0,6
+CycloneDx,Official,https://github.com/Contrast-Security-OSS/jbom,17,9,2,3,2,1,1,0,6
+CycloneDx,Official,https://github.com/bgnetworks/meta-dependencytrack,4,2,1,,,2,0,1,0
+CycloneDx,Official,https://github.com/thspinto/oss_inventory,2,2,1, ,3,0,0,4,10
+CycloneDx,Official,https://github.com/trailofbits/pip-audit,604,20,35,32,13,37,135,1,180
+CycloneDx,Official,https://github.com/thepwagner/sbom-action,0,1,0,6,2,0,0,0,65
+CycloneDx,Official,https://github.com/flexera-public/sca-codeinsight-reports-cyclonedx,1,2,0, ,,0,0,0,0
+CycloneDx,Official,https://github.com/goneall/spdxcyclone,2,1,1, ,2,6,2,0,6
+CycloneDx,Official,https://github.com/mattt/swift-package-sbom,15,2,3, ,,0,0,0,0
+CycloneDx,Official,https://github.com/javixeneize/yasca,11,1,1,2,,2,7,0,16

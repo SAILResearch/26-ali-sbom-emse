@@ -1,0 +1,471 @@
+﻿Format,Tool,RepoLink,Stars,Watching,Forks,Releases,Contributors,OpenIssues,ClosedIssues,OpenPullRequest,ClosedPullRequest
+SPDX,Github,https://github.com/spdx/spdx-spec,182,29,121,8,38,114,229,15,400
+SPDX,Github,https://github.com/spdx/tools,97,17,70,22,18,24,109,3,160
+SPDX,Github,https://github.com/composer/spdx-licenses, 1.4k ,7,25,19,17,1,9,0,32
+SPDX,Github,https://github.com/opensbom-generator/spdx-sbom-generator,180,19,62,15,25,95,58,5,97
+SPDX,Github,https://github.com/spdx/spdx-online-tools,42,12,47,1,21,60,129,8,182
+SPDX,Github,https://github.com/librariesio/spdx,32,4,11,7,8,2,40,0,37
+SPDX,Github,https://github.com/sindresorhus/spdx-license-list,80,9,19,9,9,0,11,0,10
+SPDX,Github,https://github.com/spdx/tools-python,82,21,89,5,33,51,43,23,102
+SPDX,Github,https://github.com/spdx/spdx-examples,62,8,22, ,2,18,9,2,15
+SPDX,Github,https://github.com/jslicense/spdx-expression-parse.js,35,11,22, ,5,3,7,4,15
+SPDX,Github,https://github.com/EmbarkStudios/spdx,17,4,12,22,15,0,7,0,46
+SPDX,Github,https://github.com/spdx/license-list-XML,198,41,212,17,61,43,499,5,944
+SPDX,Github,https://github.com/jslicense/spdx-correct.js,25,4,22, ,6,1,11,1,24
+SPDX,Github,https://github.com/spdx/tools-java,21,4,17,9,7,2,23,1,32
+SPDX,Github,https://github.com/spdx/license-list-data,317,24,125,17,2,0,22,0,22
+SPDX,Github,https://github.com/spdx/license-list,41,13,24, ,5,0,14,0,9
+SPDX,Github,https://github.com/kemitchell/spdx.js,52,6,11, ,3,0,13,0,7
+SPDX,Github,https://github.com/david-a-wheeler/spdx-tutorial,90,11,11, ,6,2,2,1,6
+SPDX,Github,https://github.com/spdx/tools-golang,47,10,32,4,9,16,50,5,82
+SPDX,Github,https://github.com/spdx/spdx-maven-plugin,20,3,16,7,10,12,8,1,26
+SPDX,Github,https://github.com/jslicense/spdx-license-ids,29,4,14,4,3,0,10,0,19
+SPDX,Github,https://github.com/DoSOCSv2/DoSOCSv2,14,8,21, ,10,14,49,5,59
+SPDX,Github,https://github.com/kubernetes-sigs/bom,122,5,18,5,23,8,32,1,113
+SPDX,Github,https://github.com/spdx/Spdx-Java-Library,13,4,14,15,7,4,26,0,62
+SPDX,Github,https://github.com/domcleal/spdx-licenses,13,3,12,1,4,2,1,0,4
+SPDX,Github,https://github.com/microsoft/spdx-simplify,9,11,11, ,,0,0,1,1
+SPDX,Github,https://github.com/dl9pf/meta-spdxscanner,8,7,10, ,3,5,11,0,7
+SPDX,Github,https://github.com/ehuss/license-exprs,18,7,11,1,12,4,8,0,23
+SPDX,Github,https://github.com/spdx/spdx-license-matcher,13,3,10,3,4,1,6,0,13
+SPDX,Github,https://github.com/src-d/go-license-detector,224,9,38,10,14,7,14,4,54
+SPDX,Github,https://github.com/spdx/spdx-license-diff,24,5,6,28,3,7,22,1,78
+SPDX,Github,https://github.com/whitesource-ps/ws-sbom-generator,21,7,7,53,9,17,18,1,94
+SPDX,Github,https://github.com/phadej/spdx,5,3,5, ,2,0,8,0,21
+SPDX,Github,https://github.com/jslicense/spdx-exceptions.json,12,3,8, ,2,0,7,0,3
+SPDX,Github,https://github.com/raftario/licensor,157,5,9,5,3,3,7,14,63
+SPDX,Github,https://github.com/librariesio/license-compatibility,31,6,6, ,4,9,35,0,7
+SPDX,Github,https://github.com/clearlydefined/spdx,4,10,5,1,6,1,0,6,18
+SPDX,Github,https://github.com/spdx/meetings,10,11,14, ,13,1,3,9,203
+SPDX,Github,https://github.com/microsoft/sbom-tool,767,15,37,11,9,17,25,3,58
+SPDX,Github,https://github.com/tiaanduplessis/license-o-matic,4,0,6, ,5,0,2,0,10
+SPDX,Github,https://github.com/blackducksoftware/bd_export_spdx2.2,4,3,7,2,3,4,9,1,4
+SPDX,Github,https://github.com/philips-software/spdx-builder,8,1,4,16,5,8,10,0,164
+SPDX,Github,https://github.com/spdx/spdx-to-osv,22,3,3,2,2,0,1,0,7
+SPDX,Github,https://github.com/jslicense/spdx-satisfies.js,8,4,5, ,4,0,5,2,6
+SPDX,Github,https://github.com/spdx/spdx-build-tool,11,5,7, ,4,1,1,1,7
+SPDX,Github,https://github.com/spdx/ATTIC-tools-go,6,5,10, ,5,0,0,0,3
+SPDX,Github,https://github.com/ItsNickBarry/hardhat-spdx-license-identifier,15,1,3, ,4,0,1,0,15
+SPDX,Github,https://github.com/swinslow/cmake-spdx,10,4,3, ,2,4,2,0,4
+SPDX,Github,https://github.com/siemens/spdx-licenselist,5,2,4, ,2,3,1,0,0
+SPDX,Github,https://github.com/mitchellh/go-spdx,24,3,2, ,,0,0,0,0
+SPDX,Github,https://github.com/spdx/spdx-github,5,5,4, ,3,0,8,0,10
+SPDX,Github,https://github.com/matthewb66/bd_export_spdx2.2,4,1,2, ,,3,2,0,2
+SPDX,Github,https://github.com/spdx/spdx-3-model,6,13,4, ,2,20,1,1,5
+SPDX,Github,https://github.com/mil-oss/spdx-xsd,7,10,3, ,2,0,3,0,2
+SPDX,Github,https://github.com/fsfe/reuse-tool,192,17,87,2,59,90,223,11,248
+SPDX,Github,https://github.com/condy0919/spdx.el,6,3,3, ,3,1,3,0,7
+SPDX,Github,https://github.com/stdarg/spdx-licenses,6,3,3, ,3,1,0,0,2
+SPDX,Github,https://github.com/sp9skp/spdxl,2,3,4, ,,0,0,0,0
+SPDX,Github,https://github.com/philips-software/spdx-action,13,1,4,18,4,1,8,0,26
+SPDX,Github,https://github.com/kyoh86/go-spdx,3,3,4, ,3,0,4,0,3
+SPDX,Github,https://github.com/spdx/license-coverage-grader,7,6,10, ,4,3,6,1,16
+SPDX,Github,https://github.com/spdx/sbom-landscape,12,5,2, ,3,2,3,1,14
+SPDX,Github,https://github.com/ok2it/spdxl,0,1,5, ,,0,0,0,0
+SPDX,Github,https://github.com/anchore/syft, 3k ,44,243,99,62,153,323,17,670
+SPDX,Github,https://github.com/openlogic/spdx-spec,4,1,3, ,,0,0,0,0
+SPDX,Github,https://github.com/snyk-tech-services/snyk2spdx,5,4,3,17,4,5,1,2,41
+SPDX,Github,https://github.com/ekongobie/spdx_id_doc_gen,3,1,3, ,,0,1,0,0
+SPDX,Github,https://github.com/enarx/spdx,0,2,3, ,3,0,3,0,5
+SPDX,Github,https://github.com/swinslow/npm-spdx,9,1,2, ,,2,3,15,9
+SPDX,Github,https://github.com/spdx/schema-to-java,3,8,4, ,3,4,0,1,7
+SPDX,Github,https://github.com/patriksvensson/spdx,11,1,0,,,0,0,0,0
+SPDX,Github,https://github.com/reversi-fun/license_doc_similality1,8,0,4, ,2,0,1,10,0
+SPDX,Github,https://github.com/tern-tools/tern,763,27,181,20,64,42,451,2,680
+SPDX,Github,https://github.com/sbomtools/apt2sbom,12,4,7, ,,1,0,0,0
+SPDX,Github,https://github.com/bbqsrc/spdx-lookup-python,7,3,2, ,,2,0,0,0
+SPDX,Github,https://github.com/bbqsrc/spdx-python,0,2,4, ,,1,1,0,0
+SPDX,Github,https://github.com/nexB/license-expression,29,13,13,1,14,16,28,0,30
+SPDX,Github,https://github.com/gkapi/SPDXCompatTools,2,2,2, ,,0,0,0,0
+SPDX,Github,https://github.com/EmbarkStudios/cargo-about,258,4,18,18,16,13,35,0,154
+SPDX,Github,https://github.com/hfukuchi/SPDX_specification,4,2,2, ,,1,3,0,5
+SPDX,Github,https://github.com/rohieb/spdx-license-match,5,4,2, ,,0,2,0,0
+SPDX,Github,https://github.com/ndip007/spdx-tools-js,0,2,4, ,,5,3,1,1
+SPDX,Github,https://github.com/nexB/scancode-toolkit, 1.5k ,66,445,49,298,667,1280,14,1047
+SPDX,Github,https://github.com/hen/spdx-cheat-sheet,4,1,3, ,3,0,0,0,2
+SPDX,Github,https://github.com/doubleopen-project/spdx-rs,0,3,3,1,4,3,2,0,11
+SPDX,Github,https://github.com/pezra/pretty-printer,1,1,3, ,2,0,0,0,0
+SPDX,Github,https://github.com/HansHammel/license-compatibility-checker,73,2,6, ,2,3,12,1,4
+SPDX,Github,https://github.com/spdx/governance,5,4,2, ,2,0,0,1,5
+SPDX,Github,https://github.com/spdx/yalm-python,6,5,4, ,3,1,11,0,7
+SPDX,Github,https://github.com/sw360/sw360portal,34,24,23,10,20,162,313,1,351
+SPDX,Github,https://github.com/jonathanstowe/License-SPDX,0,1,3,2,,0,3,0,1
+SPDX,Github,https://github.com/boyter/lc,103,7,16,9,6,4,15,0,31
+SPDX,Github,https://github.com/jslicense/spdx-to-html.js,3,2,2, ,2,1,0,0,2
+SPDX,Github,https://github.com/alilleybrinker/cargo-spdx,11,3,1, ,2,5,2,0,5
+SPDX,Github,https://github.com/niravpatel27/gh-action-spdx-sbom-generator,0,1,3, ,,1,1,0,0
+SPDX,Github,https://github.com/spdx/spdx-java-jackson-store,3,2,2,8,2,0,13,0,21
+SPDX,Github,https://github.com/jslicense/npm-license-corrections.json,1,3,5, ,4,1,2,0,10
+SPDX,Github,https://github.com/oss-review-toolkit/ort,905,36,196,,54,256,526,45,4843
+SPDX,Github,https://github.com/yevster/spdx-edit,2,3,2,4,3,2,6,4,20
+SPDX,Github,https://github.com/shinnn/get-spdx-license-ids,0,1,3, ,2,0,3,0,1
+SPDX,Github,https://github.com/SPDX-Git/SPDX-Git-Scanner,1,6,3, ,3,3,57,0,0
+SPDX,Github,https://github.com/dpasch01/spdx-compat-tools,1,2,3, ,,0,0,0,0
+SPDX,Github,https://github.com/aschet/spdx-license-expression-tools,2,1,2,3,3,0,0,0,2
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-maven-plugin,128,9,37, ,13,33,49,7,113
+SPDX,Github,https://github.com/opensource-jp/licenses,41,2,4,1,,3,1,2,7
+SPDX,Github,https://github.com/SPDX-CaseStudy/files,0,2,3, ,2,0,0,0,1
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-gradle-plugin,55,8,46,5,20,27,39,5,128
+SPDX,Github,https://github.com/kit-ty-kate/spdx_licenses,6,1,0,2,,0,0,0,0
+SPDX,Github,https://github.com/sergeysova/license.js,7,1,0,3,,1,0,0,0
+SPDX,Github,https://github.com/pombredanne/SPDXDash,0,0,2, ,,0,0,0,0
+SPDX,Github,https://github.com/opossum-tool/OpossumUI,38,1,8,39,15,7,15,3,863
+SPDX,Github,https://github.com/ah450/spdx-tools-python,5,2,1, ,2,8,2,0,1
+SPDX,Github,https://github.com/flexera-public/sca-codeinsight-reports-spdx,1,2,2, ,2,0,0,0,2
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-core-java,38,6,33, ,20,13,35,4,167
+SPDX,Github,https://github.com/evenorog/license,7,1,1, ,2,0,0,0,1
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-cli,90,6,21,41,9,45,40,2,173
+SPDX,Github,https://github.com/ekongobie/spdx-py-build-tool,1,3,2,1,,1,0,1,1
+SPDX,Github,https://github.com/extenda/spdx-maven-plugin,0,3,2, ,,1,0,1,0
+SPDX,Github,https://github.com/shnitish/spdx-pdf-html-template,0,0,2, ,,0,1,0,15
+SPDX,Github,https://github.com/swinslow/spdx-go,4,1,0, ,,0,15,0,19
+SPDX,Github,https://github.com/ekongobie/spdx-npm-build-tool,1,2,2, ,,0,0,3,0
+SPDX,Github,https://github.com/hastagAB/SPDX-OSS-Dataset,0,1,2, ,,0,0,1,0
+SPDX,Github,https://github.com/vkambhampaty/SPDX-2.0,0,2,2, ,2,0,5,0,1
+SPDX,Github,https://github.com/swinslow/spdxSummarizer,2,1,1, ,,4,3,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-dotnet,82,10,41,27,21,37,62,14,466
+SPDX,Github,https://github.com/ShaigroRB/spdx-license-list-as-text,0,2,2, ,,0,0,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-node-module,87,7,67,27,22,24,66,12,219
+SPDX,Github,https://github.com/KDE/licensedigger,2,3,2, ,13,0,0,0,0
+SPDX,Github,https://github.com/whitesource-ps/ws-import-spdx,4,2,0,7,2,2,0,1,3
+SPDX,Github,https://github.com/CycloneDX/specification,171,21,37,3,9,37,71,3,40
+SPDX,Github,https://github.com/pfefferle/dash-spdx-licenses,4,2,1,5,,0,0,0,0
+SPDX,Github,https://github.com/adaptant-labs/spdx-licenses-dart,4,2,1, ,,2,0,0,0
+SPDX,Github,https://github.com/swinslow/kernel-spdx-ids,4,1,1, ,,2,0,0,2
+SPDX,Github,https://github.com/tbouron/spdx-license-checker,4,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/anthonyronda/LicenseRef-OGL-1.0a,0,1,2, ,,0,0,0,0
+SPDX,Github,https://github.com/Terkwood/spdx-blaster,3,2,0,4,,10,2,0,4
+SPDX,Github,https://github.com/spdx/ATTIC-airs,4,3,1, ,,0,0,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-python,92,10,35,33,22,11,66,6,311
+SPDX,Github,https://github.com/ralphie79/spdx-docfest-2021-sept,3,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/goneall/spdxcyclone,2,1,1, ,2,6,2,0,6
+SPDX,Github,https://github.com/jslicense/spdx-copyleft.json,3,2,1, ,,0,1,0,0
+SPDX,Github,https://github.com/vladvelici/spdx-go,2,1,1, ,2,5,41,0,0
+SPDX,Github,https://github.com/spdx/license-test-generator,3,3,1, ,2,0,0,0,0
+SPDX,Github,https://github.com/jslicense/spdx-compare.js,2,2,1, ,,0,0,0,1
+SPDX,Github,https://github.com/Debian/spdx-licenses,2,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/spdx/spdx-adoption,2,5,1, ,3,0,0,0,3
+SPDX,Github,https://github.com/baptistecabrera/bca-spdx,2,1,0, ,,0,1,0,0
+SPDX,Github,https://github.com/Fosslim/license_matcher,2,2,2, ,,1,9,1,0
+SPDX,Github,https://github.com/supersimple/spdx,1,3,0, ,,0,0,0,0
+SPDX,Github,https://github.com/cutenode/conformance,9,1,0, ,2,1,0,10,6
+SPDX,Github,https://github.com/spdx/spdx-java-rdf-store,2,2,1,10,2,2,7,1,20
+SPDX,Github,https://github.com/juancarlospaco/parselicense,4,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/wojtekmach/spdx,1,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/RedstormJones/SPDX_Eclipse_Plugin,2,4,1, ,2,4,130,0,5
+SPDX,Github,https://github.com/jslicense/spdx-license-identifiers.json,2,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/adirel/spdx,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/ec-europa/spdx,0,16,1,5,3,0,0,1,12
+SPDX,Github,https://github.com/spdx/spdx-java-tagvalue-store,2,2,0,8,,3,7,0,13
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-php-composer,21,5,8,27,7,13,35,1,183
+SPDX,Github,https://github.com/ardikars/pcap,27,3,7,,,0,10,11,203
+SPDX,Github,https://github.com/vpenmatsa/spdxDashboard,0,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/dmgerman/spdxTemplates,0,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/sSpeedx/SpdxDDOS,3,1,2, ,,0,0,0,0
+SPDX,Github,https://github.com/mspiegel/spdx,0,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/bluspider/spdx,0,1,0, ,,0,0,1,0
+SPDX,Github,https://github.com/CultOfClang/Spdx,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/deepak6446/spdxValidator,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/chinmoy12c/spdxLicense,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/spdxz1/spdxz1,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-TEST-SPDX,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/swinslow/spdxLicenseManager,0,1,1, ,,1,0,0,0
+SPDX,Github,https://github.com/koizumistr/SPDX2Lite,0,1,0,2,,0,0,0,0
+SPDX,Github,https://github.com/goneall/SpdxEclipsePlugin,0,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/davaya/spdxv3-template-tool,1,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/pombredanne/Database-SPDX2.0,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/JackTien/bd_export_spdx2.2,0,1,0, ,4,0,0,0,0
+SPDX,Github,https://github.com/pombredanne/Do_SPDX,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/TobyAndToby/License-Identifiers,0,1,0,,2,0,0,1,0
+SPDX,Github,https://github.com/tsteenbe/spdx-spec,0,2,0,5,2,0,0,0,0
+SPDX,Github,https://github.com/joerter/spdx-dashboard,0,4,1,1,3,12,23,0,0
+SPDX,Github,https://github.com/swinslow/spdxify,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-python-lib,24,15,13,47,13,10,65,9,204
+SPDX,Github,https://github.com/morficus/license-ls,17,1,7, ,5,1,3,4,17
+SPDX,Github,https://github.com/all-nights/spdxer,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/desenvolvendo-me/spdxyz,0,1,0, ,,0,7,1,0
+SPDX,Github,https://github.com/spdxdmn/spdxdmn,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/jeremiah/spdxl,0,2,1, ,,11,10,0,0
+SPDX,Github,https://github.com/hangal2001/SPDXHub,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-rust-cargo,16,5,11,1,12,15,15,3,201
+SPDX,Github,https://github.com/pombredanne/SPDX2.0-Dashboard-UnderConstruction,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/swinslow/docfest-20210916,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/pombredanne/spdx-dashboard,0,0,0, ,7,0,1,0,1
+SPDX,Github,https://github.com/bconnorwhite/spdx-license,1,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sclorg-distgit/nodejs-spdx,0,6,0, ,,0,0,0,0
+SPDX,Github,https://github.com/pombredanne/DoSPDX,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/swinslow/spdx-oin,1,2,0, ,,0,0,0,1
+SPDX,Github,https://github.com/jfontan/nonSpdx,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sambacha/spdx-runner,1,2,0,2,2,2,0,0,12
+SPDX,Github,https://github.com/jthomp24/ProductHistoryUtility,0,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/JeroenKnoops/test-spdx-action,1,1,1, ,,0,0,2,0
+SPDX,Github,https://github.com/nodef/extra-license,0,2,1,,2,0,0,0,0
+SPDX,Github,https://github.com/jslicense/spdx-expression-validate.js,0,2,1, ,2,1,0,0,0
+SPDX,Github,https://github.com/PrOF-kk/spdx-headers-vscode,0,1,0,1,,0,0,0,0
+SPDX,Github,https://github.com/linterhub/schema,2,4,4,10,2,14,74,1,101
+SPDX,Github,https://github.com/swinslow/spdx-cookbook,0,1,0, ,,1,0,0,0
+SPDX,Github,https://github.com/Fabien-Chouteau/spdx_ada,0,2,0,2,,0,0,0,3
+SPDX,Github,https://github.com/lfscanning/spdx-ccc,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/winlinvip/spdx_mit,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sschuberth/spdx-stuff,0,0,1, ,,0,0,0,0
+SPDX,Github,https://github.com/hesa/spdx-validator,0,1,0, ,,4,14,0,16
+SPDX,Github,https://github.com/swarley/gem-license,2,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/sst-yoshizumi/SPDX-CSV,0,1,0, ,4,0,0,0,0
+SPDX,Github,https://github.com/Cantido/spdx_cli,0,2,0,3,,0,0,0,0
+SPDX,Github,https://github.com/SamuraiAku/SPDX.jl,1,1,0,3,,10,2,0,4
+SPDX,Github,https://github.com/sbomtools/sbomtools,4,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/9999years/spdx-tool,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sthagen/spdx-lint,1,1,0,4,,0,61,0,61
+SPDX,Github,https://github.com/pombredanne/yocto-spdx,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/samcv/SPDX-Parser,1,4,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-zowe,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/mmurto/spdx-typescript,1,1,0, ,,0,0,6,1
+SPDX,Github,https://github.com/lfscanning/spdx-odim,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/davaya/spdx-world,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/hoijui/SPDX-identifiers,1,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/savinos/SPDX-Tools,1,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/bobby0809/spdx.is,0,1,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-hyperledger,0,1,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-xgvela,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-omp,1,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/doubleopen-project/spdx-expression,0,2,0, ,,0,0,0,4
+SPDX,Github,https://github.com/lfscanning/spdx-aswf,0,1,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/spdx/canonical-serialisation,1,7,1, ,,3,0,0,4
+SPDX,Github,https://github.com/kohldampfer/spdx-test,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/zchee/go-spdx,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/winlinvip/spdx_bsl,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-dent,0,0,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/nim-nix-pkgs/spdx_licenses,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-acumos,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/tngraf/Tethys.SPDX,0,1,0,1,,0,0,0,0
+SPDX,Github,https://github.com/nexB/spdx-licenses,1,9,0, ,3,0,0,0,0
+SPDX,Github,https://github.com/sebdeckers/talk-spdx,1,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/skyzyx/spdx-licenses,0,2,1,1,,1,0,0,0
+SPDX,Github,https://github.com/nodepy/spdx-licenses,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/swinslow-test/spdx-swinslow,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/doubleopen-project/spdx-toolkit,0,3,0,3,2,0,0,0,4
+SPDX,Github,https://github.com/shnitish/spdx-html,0,1,0, ,,0,0,0,4
+SPDX,Github,https://github.com/ubinux/get_spdx,0,4,1, ,,0,0,0,2
+SPDX,Github,https://github.com/swinslow/spdx-swinslow,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/emem365/spdx_parser,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/cloudflightio/spdx-catalog,0,3,0,7,2,0,0,0,15
+SPDX,Github,https://github.com/sambacha/spdx-functional,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/compenguy/spdx-dataset,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/RichiH/spdx_helper,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/masami256/meta-spdxscanner,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-onap,0,1,0, ,2,1,0,0,0
+SPDX,Github,https://github.com/zvr/hub-spdx,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-cncf,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/cthoyt/spdx-obo,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/poscat0x04/spdx-license,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-odpi,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/MrUnfunny/spdx_printer,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/rofrol/spdx-completion,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/senorprogrammer/spdx-racer,0,2,0, ,,0,0,0,1
+SPDX,Github,https://github.com/lfscanning/spdx-lfai,0,2,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-lfenergy,1,1,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/mk-pmb/spdx-license-exceptions-js,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/ChristianMurphy/apache-category-x-spdx,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/chris48s/joi-extension-spdx,0,1,0, ,2,0,0,1,7
+SPDX,Github,https://github.com/bobby0809/spdx-license-list-XML,0,1,0, ,15,0,0,1,1
+SPDX,Github,https://github.com/mvo5/spdx-license-validator,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/SantiagoTorres/spdx-linking-mockups,1,2,0, ,,3,0,0,0
+SPDX,Github,https://github.com/myndzi/spdx-license-matcher,0,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/jslicense/spdx-whitelisted.js,0,2,0, ,3,0,0,0,0
+SPDX,Github,https://github.com/lfpratik/spdx-gen-demo,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/ayan-b/spdx_xml_to_markdown,1,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/davaya/spdx-3-elements,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/heliocastro/ortsample,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/spdx/spdx-java-spreadsheet-store,1,2,0,7,2,0,3,0,10
+SPDX,Github,https://github.com/ChristianMurphy/apache-category-b-spdx,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/cordlandwehr/akademy-2020-talk-spdx,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sclorg-distgit/nodejs-spdx-correct,0,6,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sclorg-distgit/nodejs-spdx-exceptions,0,6,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sclorg-distgit/nodejs-spdx-expression-parse,0,6,0, ,,0,0,0,0
+SPDX,Github,https://github.com/krysnuvadga/wp-spdx-spec,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/ChristianMurphy/apache-category-a-spdx,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfpratik/spdx-venv-demo,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/aodag/wheel2spdx,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/GMishx/spdx-test-data,0,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/keszybz/repo-license-summary,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/shinnn/spdx-license-id-set,0,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/sclorg-distgit/nodejs-spdx-license-ids,0,6,0, ,,0,0,0,0
+SPDX,Github,https://github.com/pombredanne/scancode-non-spdx-licenses,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/ayamaoka/SPDX_Resource_Slides,1,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-TEST-ZLIB,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/arsharaj/spdx-license-fetcher,0,1,0,,,0,0,0,0
+SPDX,Github,https://github.com/maxhbr/spdx-tools-hs,0,4,0, ,,0,0,0,0
+SPDX,Github,https://github.com/yevster/spdxtra-license-download,0,2,1,1,,0,0,0,0
+SPDX,Github,https://github.com/jslicense/spdx-is-osi.js,0,2,1, ,,0,2,0,1
+SPDX,Github,https://github.com/euantorano/spdx_licenses.nim,1,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/QMSTR/qmstr-spdx-analyzer,0,5,1, ,,0,0,0,0
+SPDX,Github,https://github.com/lfpratik/spdx-poetry-demo,0,2,1, ,2,0,0,0,1
+SPDX,Github,https://github.com/utkarshshendge/spdx-guideline-examples,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/cordlandwehr/akademy-2021-spdx-status,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/matthewkmayer/spdx-go-repro,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/johannes-klein/spdx-eclipse-editor-plugin,1,0,1, ,,0,0,0,0
+SPDX,Github,https://github.com/L1malucas/AutoHeaderSPDX,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/Kazzira/SPDX-Git-Test-Repo,0,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/mk-pmb/spdx-license-urls-js,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/kemitchell/spdx.kemitchell.com,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/spdx/spdx-tools-js,4,2,0, ,2,4,0,0,0
+SPDX,Github,https://github.com/nishakm/spdx-data-model,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/sarathsdev/SPDX-license-detection-package,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/rpavlik/spdx-to-dep5,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/pombredanne/spdx-pypi-pep-old,0,2,0, ,63,0,0,0,0
+SPDX,Github,https://github.com/ndip007/spdx-build-tool,0,2,0, ,,5,13,0,0
+SPDX,Github,https://github.com/RishabhBhatnagar/TestSPDXGoModule,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/freight-trust/spdx-asc-x12,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/Inconnu08/multi-spdx-license-parser,0,2,0, ,,1,0,0,0
+SPDX,Github,https://github.com/bharat-1809/spdx_xml_parser,1,1,0,,,0,0,0,0
+SPDX,Github,https://github.com/woinbo/SPDX-License-detector,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/etrexel/spdx-verifier-go,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/jslicense/spdx-osi.json,1,2,1, ,2,0,2,0,0
+SPDX,Github,https://github.com/noelmace/ngu-repro-spdx,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfpratik/spdx-conda-demo,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/conda-forge/spdx-license-matcher-feedstock,0,7,1, ,4,0,0,0,3
+SPDX,Github,https://github.com/TrustSource/ts-spdx-upload,0,2,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/jslicense/spdx-ranges.js,0,2,1, ,,0,1,0,1
+SPDX,Github,https://github.com/pld-linux/php-composer-spdx-licenses,0,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/Devforlive/SPDX-short-identifier-MIT,1,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/predatorx7/spdx-license-cli,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/kshitij5/spdx-license-fetcher,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/xswordsx/spdx-to-react,0,2,0,2,2,0,1,1,19
+SPDX,Github,https://github.com/yohangz/packer-cli,87,2,3, ,3,0,9,19,5
+SPDX,Github,https://github.com/zvr/xmlindent,3,3,0, ,,0,0,0,0
+SPDX,Github,https://github.com/dpasch01/spdx-compat-tools-webapp,1,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/goneall/Spdx-Java-Xml-Store,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/citation-file-format/get-spdx-licenses,1,2,0, ,,0,0,0,2
+SPDX,Github,https://github.com/seabass-labrax/spdx-license-list-faqs,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfpratik/spdx-pipenv-demo,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/hoijui/SPDX-identifiers-generator,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/salewski/ads-spdx-header-defaults,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lfscanning/spdx-o-ran,0,1,0, ,2,0,0,0,0
+SPDX,Github,https://github.com/phzfi/spdx-license-checker,0,4,0, ,,0,0,0,0
+SPDX,Github,https://github.com/doubleopen-project/example-spdx-analysis,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/tuananh/validate-spdx-license,1,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/tk-tanab/spdx_lite_depends,0,1,1, ,3,0,0,0,2
+SPDX,Github,https://github.com/chris-toenjes-deye/salus-spdx-to-osv,0,1,0, ,4,0,1,0,1
+SPDX,Github,https://github.com/winlinvip/spdx_mit_or_mulan,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/goneall/spdx-use-cases,0,1,1, ,2,1,0,0,1
+SPDX,Github,https://github.com/moritzruth/spdx-license-data,0,1,0,,,0,1,0,0
+SPDX,Github,https://github.com/aschet/spdx-license-compat,1,2,1,1,,0,0,1,0
+SPDX,Github,https://github.com/nexB/spdx-license-namespaces-registry,0,4,0, ,,0,0,0,1
+SPDX,Github,https://github.com/DimarrWS/ws_joint_spdx,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/hernanmd/license-selector,3,2,1,,2,0,1,0,1
+SPDX,Github,https://github.com/CatalinStratu/SPDX-generics-code-refactoring-example,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/shinnn/is-spdx-license-id.js,0,2,1, ,,0,1,0,0
+SPDX,Github,https://github.com/jdelapla/GraphGenerator,0,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/noi-techpark/solda-debian2spdx-standalone,0,1,1, ,,0,0,0,2
+SPDX,Github,https://github.com/nektro/zig-licenses,1,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/NodeSecure/licenses-conformance,0,1,0, ,3,1,1,0,2
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-ruby-gem,9,5,10, ,7,3,2,4,9
+SPDX,Github,https://github.com/OPEN-NEXT/LOSH-Licenses,0,9,0, ,2,1,0,0,0
+SPDX,Github,https://github.com/DBOMproject/tools,0,5,0,,3,0,0,0,3
+SPDX,Github,https://github.com/abate/LicenseMatrix,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lkoskela/license-expressions,0,1,0,1,2,1,0,3,34
+SPDX,Github,https://github.com/sean-clayton/licensor,5,0,1,4,2,0,0,0,1
+SPDX,Github,https://github.com/linux-mailinglist-archives/linux-spdx.vger.kernel.org.0,0,2,0, ,76,0,0,0,0
+SPDX,Github,https://github.com/gs146/software_package_data_exchange_list-SPDX-_scraping,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/nhoyas88/https-spdx.org-licenses-WTFPL.html,0,1,0, ,,0,0,0,1
+SPDX,Github,https://github.com/spdx/package-licenses-mapping,2,3,0, ,,3,0,0,0
+SPDX,Github,https://github.com/raratiru/django-quenv,2,1,1,4,2,1,8,0,8
+SPDX,Github,https://github.com/hattya/license.vim,2,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/stephanlachnit/dep5convert,4,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/sbomtools/apk2sbom,3,1,1, ,,1,0,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-webpack-plugin,4,3,3,8,5,3,12,79,162
+SPDX,Github,https://github.com/AjayrajSingh/licenseClassifier,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/msmeissn/rpm-list-to-sbom,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/devops-kung-fu/bomber,0,0,0, ,,0,0,0,1
+SPDX,Github,https://github.com/howderek/get-license,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/Eideticom/workflow-license-check,0,3,0, ,,1,0,0,5
+SPDX,Github,https://github.com/pombredanne/pub-oss,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/spdx/DOCS,0,7,0, ,,1,0,0,0
+SPDX,Github,https://github.com/swinslow/plugfest2-sboms,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/jsvcycling/fetchalicense,0,1,0,,,0,0,0,0
+SPDX,Github,https://github.com/sekunho/cabal-check-fail,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/swinslow/kernelscan-py,1,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/nektro/zig-licenses-text,1,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/osism/sbom,0,1,0, ,,1,2,1,0
+SPDX,Github,https://github.com/spandx/spandx,3,1,1, ,3,1,103,1,103
+SPDX,Github,https://github.com/DrSensor/granular-licensing-example,2,2,1,,,0,0,0,0
+SPDX,Github,https://github.com/pmonks/tools-licenses,3,1,1, ,,0,5,0,21
+SPDX,Github,https://github.com/Gal-Doron/spdx_tools-0.7.0a3_ws-py3-none-any,0,1,0, ,,0,0,1,1
+SPDX,Github,https://github.com/TheFinks/Fossology-Ninka,0,5,1, ,2,3,11,0,0
+SPDX,Github,https://github.com/ubinux/SW360tools,1,3,1,1,3,0,0,10,14
+SPDX,Github,https://github.com/micziz/Licenses-In-All-Languages,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/rpavlik/khronos-dual-license-finder,0,2,0,1,,0,0,0,0
+SPDX,Github,https://github.com/emzeat/mz-lictools,0,0,1, ,,0,0,0,0
+SPDX,Github,https://github.com/Fosslim/fosslim,3,4,1, ,,16,16,0,1
+SPDX,Github,https://github.com/realshiremath/sbom,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/espressif/check-copyright,0,6,1,2,6,0,0,0,5
+SPDX,Github,https://github.com/y-ashiduka/fossdriver-test,1,1,1, ,,0,0,0,1
+SPDX,Github,https://github.com/0xflotus/speedy-x,0,1,0, ,,0,0,0,4
+SPDX,Github,https://github.com/DST-QA/pytest-Java-build-failure,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/rjb4standards/SBOMExamples,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/nektro/zig-detect-license,0,3,0, ,2,0,0,0,1
+SPDX,Github,https://github.com/aschet/talc,0,2,1,1,,0,0,0,0
+SPDX,Github,https://github.com/AnalogJ/tangle,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/cwege/disco-opa,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/doubleopen-project/do-convert,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/freight-trust/legal,0,1,1,4,,1,0,0,2
+SPDX,Github,https://github.com/Anas35/sample_code,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/manifoldfinance/legal,0,2,0,1,,0,0,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-conan,9,5,4,1,2,2,0,6,31
+SPDX,Github,https://github.com/dephell/dephell_licenses,1,2,3, ,2,0,2,0,2
+SPDX,Github,https://github.com/ralexander-phi/which-license,1,1,0, ,,0,1,0,2
+SPDX,Github,https://github.com/sambacha/use-UPL-not-MIT,1,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/apolopena/qna-demo-skeleton,0,2,1,1,,0,1,0,1
+SPDX,Github,https://github.com/merobi-hub/license-updater,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/ctron/cargo-clearlydefined,0,2,0,1,,0,0,0,0
+SPDX,Github,https://github.com/djschleen/sbom-release-example,0,1,0,8,,0,0,1,1
+SPDX,Github,https://github.com/apolopena/qna-typescript-demo-skeleton,0,2,1,1,,0,2,0,1
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-nuget,2,2,1, ,,0,0,0,0
+SPDX,Github,https://github.com/moritzruth/license-chooser,0,1,0,,2,0,0,5,32
+SPDX,Github,https://github.com/tsteenbe/openchain-spec,0,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/aaronxsu/licenses-json-to-sql,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/krysnuvadga/license-coverage-grader,0,1,1, ,,2,3,0,10
+SPDX,Github,https://github.com/joshdk/licensor,4,1,2,1,,6,5,1,13
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-authoring-tool,3,5,1, ,3,2,0,7,74
+SPDX,Github,https://github.com/AvishrantsSh/GoLicense-Classifier,0,2,0,2,,0,0,0,0
+SPDX,Github,https://github.com/CycloneDX/cyclonedx-php-library,3,5,1,14,2,13,6,3,86
+SPDX,Github,https://github.com/johnjamesmccann/xerces-3.2.3-DTD-hotfix,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/KY-Programming/license-to-json,0,0,0,3,,0,0,0,0
+SPDX,Github,https://github.com/kube-tarian/fixer,0,0,0, ,3,0,0,0,1
+SPDX,Github,https://github.com/vmware-archive/license-notices-linter,0,2,0, ,,0,0,0,0
+SPDX,Github,https://github.com/lokeshjoshi01/Simple-Storage-Solidiy,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/Tokenbaldu/TOKEN-BALDU,1,1,1, ,,0,0,0,1
+SPDX,Github,https://github.com/lokeshjoshi01/Smart-Contract-Lottery-Solidity,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/15-Lippo/lisprocoin,1,1,0, ,,9,0,0,0
+SPDX,Github,https://github.com/Aaronvivek/fuck-token-staking-contract,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/rutisan/XBN-Contrac,1,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/KeKo6988/K3k0,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/kariu87/test,0,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/basta1255s/owntoken.sol,5,1,2, ,,0,0,0,0
+SPDX,Github,https://github.com/BabyFlokiCoin/Baby-Floki-Coin,4,1,3, ,,0,0,0,0
+SPDX,Github,https://github.com/ElvisPresleyCoin/Contract-of-ELVIS,0,0,0, ,,0,0,0,0
+SPDX,Github,https://github.com/yoyoqe/uououou,1,1,0, ,,0,0,0,0
+SPDX,Github,https://github.com/hixio-mh/apis.google.com-js-api.js,0,0,1, ,,0,0,0,0
+SPDX,Github,https://github.com/BULLBITBULL/CONTRACT,0,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/Micheal66/cotract-X-Wallet,2,1,1, ,,0,0,0,0
+SPDX,Github,https://github.com/fegcashcommunity/fegcashcontract,0,1,3, ,,0,0,0,0
+SPDX,Github,https://github.com/vohidjon123/google,0,2,2, ,,0,0,0,0
+SPDX,Official,https://github.com/spdx/tools-java,21,4,17,9,7,2,23,1,32
+SPDX,Official,https://github.com/spdx/tools-python,82,21,90,5,33,51,43,23,102
+SPDX,Official,https://github.com/spdx/tools-golang,46,10,32,4,9,16,50,5,82
+SPDX,Official,https://github.com/spdx/spdx-tools-js,4,2,0, ,2,4,0,0,0
+SPDX,Official,https://github.com/spdx/spdx-online-tools,42,12,47,1,21,59,129,8,182
+SPDX,Official,https://github.com/spdx/spdx-maven-plugin,20,3,16,7,10,12,8,1,26
+SPDX,Official,https://github.com/spdx/spdx-build-tool,11,5,7, ,4,1,1,1,7
+SPDX,Official,https://github.com/chaoss/augur/,455,23,649, ,92,47,409,23,1392
+SPDX,Official,https://github.com/swinslow/kernel-spdx-ids,4,1,1, ,,2,0,0,2
+SPDX,Official,https://github.com/swinslow/npm-spdx,9,1,2, ,,2,3,15,9
+SPDX,Official,https://github.com/oss-review-toolkit/ort,901,35,196,,54,255,525,49,4838
+SPDX,Official,https://github.com/QMSTR/qmstr,30,1,1, ,12,58,123,2,365
+SPDX,Official,https://github.com/fsfe/reuse-tool,192,17,84,2,59,88,223,9,248
+SPDX,Official,https://github.com/CERTCC/SBOM,30,9,10, ,2,4,9,0,2
+SPDX,Official,https://github.com/nexB/scancode-toolkit,1500,65,444,49,298,667,1280,14,1047
+SPDX,Official,https://github.com/hyperledger-labs/SParts,12,9,10, ,5,4,0,1,73
+SPDX,Official,https://github.com/eclipse/sw360,83,25,77,24,37,278,588,22,644
+SPDX,Official,https://github.com/tern-tools/tern,763,27,181,20,64,42,451,2,680
+SPDX,Official,https://github.com/blackducksoftware/bd_export_spdx2.2,4,3,7,2,3,4,9,1,4
