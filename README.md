@@ -1,6 +1,6 @@
 # The State of the SBOM Tool Ecosystems: A Comparative Analysis of SPDX and CycloneDX
 
-Replication package for an empirical study of the SPDX and CycloneDX tool ecosystems.
+Replication package for an empirical study of the SPDX and CycloneDX tool ecosystems, accepted for publication in *Empirical Software Engineering* (EMSE), 2026.
 
 ## Contents
 
@@ -29,7 +29,7 @@ Data collection date: May 1, 2025.
 ├── RQ3-issues/
 ├── RQ4-project/
 ├── methodology-figure/
-├── wip-24-ali-sbom-emse/    # LaTeX manuscript (separate git project)
+├── 26-ali-sbom-emse/    # LaTeX manuscript (separate git project)
 ├── comments/                # Review rounds and response letters
 ├── docs/                    # Project web page
 └── requirements.txt
