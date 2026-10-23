@@ -28,6 +28,7 @@ df <- df %>%
 
 plot <- ggplot(df, aes(x=reorder(attribute, -(as.numeric(count))), y=log(as.numeric(count)), fill=type)) + 
   geom_boxplot() +
+  scale_x_discrete(labels = c(closedPRs="Closed PRs", openPRs="Open PRs", commits="Commits", contributors="Contributors", forks="Forks", releases="Releases", stars="Stars", watchers="Watchers")) +
   ylab("Log of Count") + xlab("Github Repository Stats") +
   labs(fill = "Format ") +
   theme(legend.position="top") +

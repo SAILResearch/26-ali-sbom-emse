@@ -34,6 +34,7 @@ df <- df %>%
 
 plot <- ggplot(df, aes(x=reorder(attribute, -(as.numeric(count))), y=log((as.numeric(count))), fill=format)) + 
   geom_boxplot() +
+  scale_x_discrete(labels = c(ClosedPullRequest="Closed PRs", OpenPullRequest="Open PRs", Commits="Commits", Contributors="Contributors", Forks="Forks", Releases="Releases", Stars="Stars", Watchers="Watchers")) +
   ylab("Log of \n (metric value / age of repository in days)") + xlab("Community Health Metrics") +
   labs(fill = "Format ") +
   theme(legend.position="top") +
