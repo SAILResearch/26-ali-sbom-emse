@@ -1,0 +1,748 @@
+"","Tags","identifier","n"
+"1","""wont fix""","SPDX",43
+"2",".net","SPDX",11
+"3",":gift: Rewarded on Issuehunt","SPDX",1
+"4","API Call","CycloneDX",28
+"5","Acceptance Notification Sent","SPDX",2
+"6","Beginner","SPDX",2
+"7","Bug Fixes and Defects","CycloneDX",6294
+"8","Bug Fixes and Defects","SPDX",4296
+"9","CI","CycloneDX",36
+"10","CI","SPDX",27
+"11","CI/CD","CycloneDX",18
+"12","CI/CD","SPDX",36
+"13","CT","CycloneDX",8
+"14","CT","SPDX",6
+"15","Code Components","CycloneDX",2876
+"16","Code Components","SPDX",2942
+"17","Code Quality","CycloneDX",1004
+"18","Code Quality","SPDX",834
+"19","Community Engagement and Support","CycloneDX",453
+"20","Community Engagement and Support","SPDX",604
+"21","Configuration","CycloneDX",1754
+"22","Configuration","SPDX",1316
+"23","Consider Funding","CycloneDX",22
+"24","Continuous Integration and Deployment (CI/CD)","CycloneDX",375
+"25","Continuous Integration and Deployment (CI/CD)","SPDX",382
+"26","Documentation","CycloneDX",537
+"27","Documentation","SPDX",945
+"28","Done","SPDX",18
+"29","FP/FN report","CycloneDX",41
+"30","Feature Development and Enhancement","CycloneDX",4728
+"31","Feature Development and Enhancement","SPDX",4037
+"32","Feature Request","SPDX",18
+"33","GH Open Source Day","CycloneDX",11
+"34","GH Open Source Day","SPDX",22
+"35","GSoC","CycloneDX",27
+"36","GSoC","SPDX",54
+"37","GUI and outputs","CycloneDX",49
+"38","GUI and outputs","SPDX",98
+"39","HA","CycloneDX",19
+"40","HPND-variant","SPDX",23
+"41","Hacktoberfest","SPDX",1
+"42","I/O","CycloneDX",120
+"43","I/O","SPDX",28
+"44","ISO conformance","SPDX",28
+"45","ISO publication","SPDX",15
+"46","IaC violation","SPDX",3
+"47","Integration and Interfacing","CycloneDX",1400
+"48","Integration and Interfacing","SPDX",1060
+"49","JMESPath","CycloneDX",84
+"50","LFX mentorship project","CycloneDX",32
+"51","Libraries","CycloneDX",99
+"52","Libraries","SPDX",125
+"53","Licensing","CycloneDX",222
+"54","Licensing","SPDX",1634
+"55","Mend: dependency security vulnerability","SPDX",1
+"56","New-UI","SPDX",4
+"57","OSI related","SPDX",3
+"58","P1","CycloneDX",1
+"59","P3","CycloneDX",1
+"60","PSA","CycloneDX",1
+"61","PSA","SPDX",1
+"62","Priority: High","SPDX",20
+"63","Priority: Low","SPDX",21
+"64","Priority: Medium","SPDX",26
+"65","Priority: high","CycloneDX",35
+"66","Priority: high","SPDX",70
+"67","Priority: low","CycloneDX",5
+"68","Priority: low","SPDX",10
+"69","Priority: medium","CycloneDX",3
+"70","Priority: medium","SPDX",6
+"71","Profile.Lite","SPDX",3
+"72","Profile:AI","SPDX",2
+"73","Profile:Build","SPDX",3
+"74","Profile:Core","SPDX",54
+"75","Profile:Dataset","SPDX",5
+"76","Profile:FuSa","SPDX",1
+"77","Profile:Licensing","SPDX",41
+"78","Profile:Security","SPDX",11
+"79","Profile:Software","SPDX",21
+"80","Profile:Usage","SPDX",2
+"81","Python2","CycloneDX",1
+"82","Python2","SPDX",2
+"83","Python3","CycloneDX",9
+"84","Python3","SPDX",18
+"85","QA","CycloneDX",37
+"86","QA","SPDX",29
+"87","RDF/OWL/SHACL","SPDX",11
+"88","REST","SPDX",23
+"89","RFC notice sent","CycloneDX",20
+"90","RFC notice sent","SPDX",20
+"91","RFC vote accepted","CycloneDX",27
+"92","RFC vote accepted","SPDX",27
+"93","Rejected","CycloneDX",4
+"94","Release Management and Versioning","CycloneDX",226
+"95","Release Management and Versioning","SPDX",265
+"96","Required for Release","SPDX",2
+"97","SCS","SPDX",1
+"98","SPDX v2.1","SPDX",6
+"99","SPDX v2.2","SPDX",10
+"100","SPDX v2.3","SPDX",14
+"101","SPDX3 (prototype)","SPDX",24
+"102","Sincere Reengineering Moment","SPDX",1
+"103","Size S","SPDX",1
+"104","Stability of the tool","SPDX",3
+"105","Status: In Progress","SPDX",2
+"106","Status: On Hold","SPDX",4
+"107","Submit New License","SPDX",64
+"108","TLN-registration","CycloneDX",6
+"109","Technical Debt","CycloneDX",219
+"110","Technical Debt","SPDX",242
+"111","Type: Bug","SPDX",11
+"112","Type: CI","SPDX",34
+"113","Type: Documentation","SPDX",5
+"114","Type: Feature","SPDX",16
+"115","Type: Maintenance","SPDX",13
+"116","Type: Test","SPDX",10
+"117","Unresolved","SPDX",29
+"118","User Interface and Outputs","CycloneDX",1285
+"119","User Interface and Outputs","SPDX",1276
+"120","VAP","CycloneDX",14
+"121","ValidationError","CycloneDX",2
+"122","ValidationError","SPDX",1
+"123","Verified","CycloneDX",1
+"124","Verified","SPDX",1
+"125","WIP","SPDX",5
+"126","XML markup change","SPDX",98
+"127","XML schema change","SPDX",7
+"128","accepted","SPDX",3
+"129","accepting suggestions","CycloneDX",1
+"130","accepting suggestions","SPDX",2
+"131","access control","CycloneDX",13
+"132","accessibility","CycloneDX",1
+"133","advanced","CycloneDX",5
+"134","advanced","SPDX",10
+"135","advisor","SPDX",96
+"136","already on SPDX License List","SPDX",6
+"137","analyzer","SPDX",688
+"138","answered","SPDX",5
+"139","api docs","CycloneDX",9
+"140","arch","CycloneDX",12
+"141","arch","SPDX",24
+"142","archive extraction","CycloneDX",17
+"143","archive extraction","SPDX",34
+"144","assigned","CycloneDX",41
+"145","assigned","SPDX",82
+"146","attestation","CycloneDX",8
+"147","attestation","SPDX",3
+"148","auto-gen","CycloneDX",20
+"149","await community interest","SPDX",2
+"150","beginner","CycloneDX",9
+"151","beginner","SPDX",18
+"152","binary and code analysis","CycloneDX",3
+"153","binary and code analysis","SPDX",6
+"154","binary and compiled code","CycloneDX",5
+"155","binary and compiled code","SPDX",10
+"156","binary-analysis","CycloneDX",18
+"157","binary-analysis","SPDX",9
+"158","blocked","CycloneDX",21
+"159","blocked","SPDX",12
+"160","breaking","CycloneDX",1
+"161","breaking change","CycloneDX",63
+"162","breaking change","SPDX",50
+"163","breaking-change","CycloneDX",42
+"164","breaking-change","SPDX",20
+"165","breaking-changes","CycloneDX",10
+"166","breaking-changes","SPDX",10
+"167","bug","CycloneDX",5815
+"168","bug","SPDX",3979
+"169","bug-candidate","CycloneDX",16
+"170","build","CycloneDX",2
+"171","build","SPDX",18
+"172","build process","CycloneDX",2
+"173","cannot reproduce","CycloneDX",39
+"174","cannot reproduce","SPDX",7
+"175","canonicalization","SPDX",1
+"176","cargo-cyclonedx","CycloneDX",10
+"177","cargo-cyclonedx","SPDX",10
+"178","cd","CycloneDX",6
+"179","cdx-1.3","CycloneDX",1
+"180","cdx-1.4","CycloneDX",4
+"181","cdx-1.5","CycloneDX",4
+"182","cdx-1.6","CycloneDX",2
+"183","change to spec (also)","SPDX",3
+"184","changelog-ignore","CycloneDX",314
+"185","changelog-ignore","SPDX",59
+"186","chore","CycloneDX",34
+"187","chore","SPDX",25
+"188","ci","CycloneDX",3
+"189","cleanup","CycloneDX",22
+"190","clearlydefined","SPDX",8
+"191","cli","SPDX",20
+"192","cli:apply","CycloneDX",29
+"193","cli:other","CycloneDX",11
+"194","cli:test","CycloneDX",48
+"195","comment-styles","SPDX",68
+"196","community feedback request","CycloneDX",3
+"197","community-meeting","CycloneDX",4
+"198","community-meeting","SPDX",2
+"199","complex","CycloneDX",2
+"200","complex","SPDX",4
+"201","component:cicd","CycloneDX",8
+"202","component:cli","CycloneDX",36
+"203","component:dep-sources","CycloneDX",57
+"204","component:docs","CycloneDX",16
+"205","component:fixes","CycloneDX",2
+"206","component:output-formats","CycloneDX",13
+"207","component:tests","CycloneDX",3
+"208","component:vuln-sources","CycloneDX",12
+"209","configuration","SPDX",114
+"210","copyright scan","CycloneDX",55
+"211","copyright scan","SPDX",110
+"212","core and api","CycloneDX",45
+"213","core and api","SPDX",90
+"214","coverage","CycloneDX",1
+"215","cpe","CycloneDX",4
+"216","cpe","SPDX",2
+"217","cyclonedx","CycloneDX",3
+"218","cyclonedx","SPDX",6
+"219","cyclonedx-bom","CycloneDX",5
+"220","cyclonedx-bom","SPDX",5
+"221","data model","SPDX",34
+"222","defect","CycloneDX",423
+"223","defect","SPDX",18
+"224","deferred","CycloneDX",1
+"225","deferred","SPDX",1
+"226","deliverable:container-image","CycloneDX",6
+"227","dependencies","CycloneDX",56
+"228","dependencies","SPDX",54
+"229","design needed","CycloneDX",11
+"230","design needed","SPDX",22
+"231","design-partner-1","CycloneDX",92
+"232","design-partner-2","CycloneDX",21
+"233","design-partner-3","CycloneDX",10
+"234","design-partner-4","CycloneDX",19
+"235","design-partner-5","CycloneDX",16
+"236","design-partner-6","CycloneDX",20
+"237","design-partner-7","CycloneDX",1
+"238","development environment","CycloneDX",4
+"239","development environment","SPDX",8
+"240","discovery","CycloneDX",53
+"241","discuss on legal call","SPDX",9
+"242","discussion","CycloneDX",7
+"243","discussion","SPDX",4
+"244","discussion needed","SPDX",8
+"245","do not merge - нет!","SPDX",1
+"246","doc improvement","SPDX",7
+"247","doc required","CycloneDX",6
+"248","docker","CycloneDX",2
+"249","docker","SPDX",146
+"250","docs","CycloneDX",27
+"251","docs","SPDX",36
+"252","documentation","CycloneDX",225
+"253","documentation","SPDX",424
+"254","downloader","SPDX",96
+"255","downstream:broken-package","CycloneDX",1
+"256","duplicate","CycloneDX",183
+"257","duplicate","SPDX",98
+"258","easy","CycloneDX",59
+"259","easy","SPDX",118
+"260","ecosystem:go","CycloneDX",24
+"261","ecosystem:go","SPDX",8
+"262","ecosystem:java","CycloneDX",82
+"263","ecosystem:java","SPDX",19
+"264","ecosystem:javascript","CycloneDX",42
+"265","ecosystem:javascript","SPDX",7
+"266","ecosystem:os","CycloneDX",22
+"267","ecosystem:os","SPDX",9
+"268","ecosystem:perl","CycloneDX",2
+"269","ecosystem:perl","SPDX",1
+"270","ecosystem:php","CycloneDX",4
+"271","ecosystem:php","SPDX",2
+"272","ecosystem:python","CycloneDX",20
+"273","ecosystem:python","SPDX",6
+"274","ecosystem:ruby","CycloneDX",12
+"275","ecosystem:ruby","SPDX",2
+"276","ecosystem:rust","CycloneDX",8
+"277","ecosystem:rust","SPDX",1
+"278","ecosystem:windows","CycloneDX",6
+"279","ecosystem:windows","SPDX",3
+"280","ecosystem:wordpress","CycloneDX",2
+"281","ecosystem:wordpress","SPDX",1
+"282","email and url scan","CycloneDX",6
+"283","email and url scan","SPDX",12
+"284","end user","CycloneDX",382
+"285","engine","CycloneDX",2
+"286","engine","SPDX",1
+"287","enhancement","CycloneDX",4535
+"288","enhancement","SPDX",2749
+"289","epic","SPDX",23
+"290","epic: finalize engine-syft integration","CycloneDX",14
+"291","epic: finalize engine-syft integration","SPDX",7
+"292","epic: grype / engine integration","CycloneDX",40
+"293","epic: grype / engine integration","SPDX",4
+"294","epic: syft enterprise upload","CycloneDX",6
+"295","epic: syft enterprise upload","SPDX",3
+"296","evaluator","SPDX",76
+"297","events","CycloneDX",26
+"298","example","CycloneDX",1
+"299","example","SPDX",1
+"300","examples","SPDX",15
+"301","exceptions","CycloneDX",35
+"302","experimental","CycloneDX",2
+"303","experimental","SPDX",4
+"304","false-negative","CycloneDX",46
+"305","false-positive","CycloneDX",230
+"306","false-positive:cpe","CycloneDX",60
+"307","feature","CycloneDX",73
+"308","feature","SPDX",146
+"309","feature request","CycloneDX",13
+"310","feature_request","SPDX",1
+"311","file info","CycloneDX",11
+"312","file info","SPDX",22
+"313","filtering","CycloneDX",6
+"314","filtering","SPDX",1
+"315","firefox","SPDX",2
+"316","first timers only","CycloneDX",2
+"317","first timers only","SPDX",4
+"318","fixed pending review","CycloneDX",80
+"319","fixed pending review","SPDX",160
+"320","foreach","CycloneDX",35
+"321","format:cyclonedx","CycloneDX",20
+"322","format:cyclonedx","SPDX",6
+"323","format:spdx","CycloneDX",16
+"324","format:spdx","SPDX",7
+"325","general question","SPDX",1
+"326","generate-refactoring","CycloneDX",3
+"327","generation","CycloneDX",177
+"328","generation-existing","CycloneDX",7
+"329","github_actions","CycloneDX",5
+"330","github_actions","SPDX",5
+"331","global context","CycloneDX",2
+"332","go","CycloneDX",1
+"333","go:1.18","CycloneDX",2
+"334","golang","SPDX",29
+"335","good first issue","CycloneDX",603
+"336","good first issue","SPDX",460
+"337","good for new participants","SPDX",5
+"338","good-first-issue","CycloneDX",186
+"339","good-first-issue","SPDX",141
+"340","grafana","CycloneDX",5
+"341","greenkeeper","SPDX",6
+"342","grokability","CycloneDX",21
+"343","grokability","SPDX",42
+"344","gsoc","SPDX",66
+"345","hack","CycloneDX",1
+"346","hack","SPDX",2
+"347","hacktoberfest","CycloneDX",21
+"348","hacktoberfest","SPDX",54
+"349","has merge conflicts","SPDX",1
+"350","helm","CycloneDX",140
+"351","help wanted","CycloneDX",304
+"352","help wanted","SPDX",293
+"353","help-wanted","CycloneDX",8
+"354","help-wanted","SPDX",2
+"355","helper-cli","SPDX",12
+"356","high-priority","CycloneDX",12
+"357","high-priority","SPDX",24
+"358","hold for more input","SPDX",1
+"359","hygiene","CycloneDX",3
+"360","hygiene","SPDX",6
+"361","idea","CycloneDX",18
+"362","idea","SPDX",12
+"363","imageVerify","CycloneDX",156
+"364","improve-license-detection","CycloneDX",40
+"365","improve-license-detection","SPDX",80
+"366","in triage","CycloneDX",270
+"367","installation and packaging","CycloneDX",93
+"368","installation and packaging","SPDX",186
+"369","integration","CycloneDX",3
+"370","integration","SPDX",6
+"371","integration/defectdojo","CycloneDX",19
+"372","integration/msteams","CycloneDX",1
+"373","integration/vulndb","CycloneDX",1
+"374","intermediate","CycloneDX",13
+"375","intermediate","SPDX",26
+"376","invalid","CycloneDX",21
+"377","invalid","SPDX",65
+"378","its on","SPDX",1
+"379","java","SPDX",11
+"380","javascript","CycloneDX",2
+"381","json","CycloneDX",16
+"382","json","SPDX",7
+"383","kind/bug","CycloneDX",13
+"384","kind/bug","SPDX",32
+"385","kind/documentation","CycloneDX",1
+"386","kind/documentation","SPDX",1
+"387","kind/epic","CycloneDX",1
+"388","kind/feature","CycloneDX",18
+"389","kind/feature","SPDX",27
+"390","kind/question","CycloneDX",5
+"391","kind/support","SPDX",1
+"392","landscape","SPDX",1
+"393","large","SPDX",8
+"394","legal","CycloneDX",2
+"395","legal","SPDX",2
+"396","legal team review","SPDX",3
+"397","license","CycloneDX",28
+"398","license","SPDX",14
+"399","license expression","SPDX",3
+"400","license scan","CycloneDX",385
+"401","license scan","SPDX",770
+"402","license-review","CycloneDX",20
+"403","license-review","SPDX",40
+"404","license_clarity_score","CycloneDX",7
+"405","license_clarity_score","SPDX",14
+"406","lifecycle/frozen","CycloneDX",58
+"407","lifecycle/frozen","SPDX",1
+"408","lifecycle/rotten","SPDX",26
+"409","lifecycle/stale","CycloneDX",108
+"410","lifecycle/stale","SPDX",2
+"411","live-online-scan","CycloneDX",3
+"412","live-online-scan","SPDX",6
+"413","load testing","CycloneDX",5
+"414","log enhancement","CycloneDX",41
+"415","long running","CycloneDX",4
+"416","long running","SPDX",8
+"417","low hanging fruit","SPDX",3
+"418","maintenance","CycloneDX",8
+"419","maintenance","SPDX",6
+"420","major","CycloneDX",9
+"421","major","SPDX",18
+"422","maven","SPDX",11
+"423","maybe in REUSE tool","SPDX",2
+"424","memory","CycloneDX",9
+"425","meta","CycloneDX",4
+"426","metrics","CycloneDX",2
+"427","milestone 1.10.1","CycloneDX",1
+"428","milestone 1.11.0","CycloneDX",1
+"429","milestone 1.11.2","CycloneDX",4
+"430","milestone 1.13.0","CycloneDX",2
+"431","milestone 1.5.0","CycloneDX",5
+"432","milestone 1.5.4","CycloneDX",2
+"433","milestone 1.6.1","CycloneDX",1
+"434","milestone 1.7.0","CycloneDX",3
+"435","milestone 1.7.1","CycloneDX",1
+"436","milestone 1.8.2","CycloneDX",1
+"437","minor","CycloneDX",7
+"438","minor","SPDX",14
+"439","minor updates to file","SPDX",46
+"440","model","SPDX",97
+"441","multiple-sources","CycloneDX",4
+"442","multiple-sources","SPDX",1
+"443","must have","CycloneDX",54
+"444","must have","SPDX",108
+"445","mutation","CycloneDX",141
+"446","mutation-existing","CycloneDX",44
+"447","needs clarification","SPDX",88
+"448","needs customer input","SPDX",2
+"449","needs design (KDP)","CycloneDX",15
+"450","needs general test","SPDX",3
+"451","needs info","SPDX",134
+"452","needs milestone","CycloneDX",15
+"453","needs review","SPDX",1
+"454","needs special test","SPDX",1
+"455","needs-discussion","CycloneDX",4
+"456","needs-discussion","SPDX",1
+"457","needs-external-data","CycloneDX",4
+"458","needs-external-data","SPDX",2
+"459","needs-investigation","CycloneDX",16
+"460","needs-research","CycloneDX",18
+"461","needs-research","SPDX",9
+"462","needs-response","CycloneDX",2
+"463","needs-validation","CycloneDX",4
+"464","needs-validation","SPDX",2
+"465","new and improved data","CycloneDX",89
+"466","new and improved data","SPDX",178
+"467","new feature","CycloneDX",284
+"468","new feature","SPDX",728
+"469","new format","SPDX",16
+"470","new license/exception request","SPDX",349
+"471","new license/exception: Accepted","SPDX",271
+"472","new license/exception: Not Accepted","SPDX",64
+"473","new license/exception: waiting for steward","SPDX",2
+"474","new license/exception: waiting for submitter","SPDX",8
+"475","new-cataloger","CycloneDX",40
+"476","new-cataloger","SPDX",20
+"477","new-license","CycloneDX",2
+"478","new-license","SPDX",4
+"479","nice to have","CycloneDX",22
+"480","nice to have","SPDX",44
+"481","no-stale","CycloneDX",5
+"482","node","SPDX",8
+"483","not a bug","SPDX",8
+"484","not an issue","CycloneDX",40
+"485","not planned","SPDX",5
+"486","not-reproducible","CycloneDX",1
+"487","not-reproducible","SPDX",1
+"488","notifier","SPDX",2
+"489","npm","SPDX",18
+"490","npm 10","CycloneDX",1
+"491","observability","CycloneDX",4
+"492","off-topic or spam","SPDX",16
+"493","on hold","CycloneDX",6
+"494","on hold","SPDX",3
+"495","os support","CycloneDX",16
+"496","os support","SPDX",32
+"497","ossindex-issue","CycloneDX",3
+"498","p1","CycloneDX",34
+"499","p2","CycloneDX",235
+"500","p3","CycloneDX",101
+"501","package scan","CycloneDX",247
+"502","package scan","SPDX",494
+"503","package-at-toplevel","CycloneDX",17
+"504","package-at-toplevel","SPDX",34
+"505","package-files","CycloneDX",19
+"506","package-files","SPDX",38
+"507","package-formats","CycloneDX",103
+"508","package-formats","SPDX",206
+"509","packaging","CycloneDX",2
+"510","packaging and ci","SPDX",16
+"511","parser","SPDX",38
+"512","parser-gradle","CycloneDX",1
+"513","parser-groovy","CycloneDX",16
+"514","parser-hcl","CycloneDX",1
+"515","parser-java","CycloneDX",21
+"516","parser-json","CycloneDX",1
+"517","parser-kotlin","CycloneDX",2
+"518","parser-maven","CycloneDX",6
+"519","parser-properties","CycloneDX",1
+"520","parser-xml","CycloneDX",7
+"521","parser-yaml","CycloneDX",1
+"522","pending more information","CycloneDX",40
+"523","pending release","CycloneDX",216
+"524","pending/close","SPDX",6
+"525","performance","CycloneDX",50
+"526","performance","SPDX",2
+"527","php","SPDX",12
+"528","pipenv","SPDX",6
+"529","planning","CycloneDX",6
+"530","planning","SPDX",3
+"531","plat:linux","CycloneDX",1
+"532","plat:macos","CycloneDX",1
+"533","plat:windows","CycloneDX",6
+"534","platform","CycloneDX",11
+"535","plugin","CycloneDX",7
+"536","plugin","SPDX",28
+"537","poetry","SPDX",6
+"538","policy","CycloneDX",1
+"539","policy","SPDX",2
+"540","policy-report-refactoring","CycloneDX",2
+"541","potential policy change","SPDX",4
+"542","pri:high","CycloneDX",9
+"543","pri:low","CycloneDX",10
+"544","primary-summary","CycloneDX",5
+"545","primary-summary","SPDX",10
+"546","priority/important-longterm","SPDX",1
+"547","priority/low","SPDX",44
+"548","production","SPDX",28
+"549","profile: base","SPDX",2
+"550","profile: defects","SPDX",1
+"551","profile: licensing","SPDX",24
+"552","prometheus","CycloneDX",20
+"553","proposal","CycloneDX",24
+"554","proposal","SPDX",48
+"555","proposed core enhancement","CycloneDX",69
+"556","proposed core enhancement","SPDX",69
+"557","proposed schema extension","CycloneDX",1
+"558","proposed schema extension","SPDX",1
+"559","prototype","CycloneDX",12
+"560","pss","CycloneDX",19
+"561","python","SPDX",19
+"562","python-support","CycloneDX",1
+"563","python-support","SPDX",2
+"564","qa","CycloneDX",2
+"565","question","CycloneDX",508
+"566","question","SPDX",482
+"567","rainy day","CycloneDX",1
+"568","rainy day","SPDX",1
+"569","ready for development","CycloneDX",6
+"570","ready for development","SPDX",6
+"571","ready for review","CycloneDX",11
+"572","ready for review","SPDX",11
+"573","recipe","CycloneDX",136
+"574","refactor","CycloneDX",22
+"575","refactor","SPDX",41
+"576","refactoring","CycloneDX",11
+"577","regression","CycloneDX",25
+"578","regression","SPDX",11
+"579","release","CycloneDX",18
+"580","release","SPDX",22
+"581","release 4.0.0","CycloneDX",23
+"582","release 4.1.0","CycloneDX",8
+"583","release notes","SPDX",2
+"584","release-critical","CycloneDX",8
+"585","release-high","CycloneDX",58
+"586","release-low","CycloneDX",2
+"587","release-medium","CycloneDX",1
+"588","released","CycloneDX",13
+"589","released","SPDX",6
+"590","released on @alpha","CycloneDX",20
+"591","released on @beta","CycloneDX",17
+"592","reporter","SPDX",298
+"593","reports","CycloneDX",119
+"594","request for comment","CycloneDX",30
+"595","request for comment","SPDX",30
+"596","research","SPDX",1
+"597","retracted","CycloneDX",1
+"598","roadmap","CycloneDX",1
+"599","ruby","SPDX",10
+"600","run-on-windows","CycloneDX",24
+"601","run-on-windows","SPDX",12
+"602","rust","CycloneDX",1
+"603","rust","SPDX",8
+"604","sample policy","CycloneDX",26
+"605","sbom","CycloneDX",12
+"606","sbom","SPDX",2
+"607","scancode-results-analyzer","CycloneDX",1
+"608","scancode-results-analyzer","SPDX",2
+"609","scanner","SPDX",354
+"610","schema 1.0","CycloneDX",4
+"611","schema 1.0","SPDX",4
+"612","schema 1.1","CycloneDX",8
+"613","schema 1.1","SPDX",7
+"614","schema 1.2","CycloneDX",13
+"615","schema 1.2","SPDX",11
+"616","schema 1.3","CycloneDX",16
+"617","schema 1.3","SPDX",15
+"618","schema 1.4","CycloneDX",15
+"619","schema 1.4","SPDX",15
+"620","schema 1.5","CycloneDX",25
+"621","schema 1.5","SPDX",18
+"622","scorecard","CycloneDX",10
+"623","security","CycloneDX",105
+"624","security","SPDX",4
+"625","semantic-release","SPDX",6
+"626","serialization","SPDX",33
+"627","should have","CycloneDX",12
+"628","should have","SPDX",24
+"629","show-stopper","CycloneDX",2
+"630","show-stopper","SPDX",4
+"631","sig/release","SPDX",59
+"632","small","SPDX",4
+"633","source: conda","CycloneDX",3
+"634","source: conda","SPDX",3
+"635","source: environment","CycloneDX",6
+"636","source: environment","SPDX",6
+"637","source: hatch","CycloneDX",1
+"638","source: hatch","SPDX",1
+"639","source: pdm","CycloneDX",1
+"640","source: pdm","SPDX",1
+"641","source: pipenv","CycloneDX",1
+"642","source: pipenv","SPDX",1
+"643","source: poetry","CycloneDX",9
+"644","source: poetry","SPDX",9
+"645","source: requirements","CycloneDX",3
+"646","source: requirements","SPDX",3
+"647","spdx","CycloneDX",9
+"648","spdx","SPDX",18
+"649","spdx-utils","SPDX",34
+"650","spec","SPDX",6
+"651","spec:1.4","CycloneDX",2
+"652","spec:1.5","CycloneDX",8
+"653","spike","CycloneDX",10
+"654","spike","SPDX",3
+"655","spike / research","CycloneDX",12
+"656","stale","CycloneDX",86
+"657","stale","SPDX",27
+"658","starter","CycloneDX",1
+"659","starter","SPDX",2
+"660","style","CycloneDX",3
+"661","style","SPDX",6
+"662","summaries","CycloneDX",19
+"663","summaries","SPDX",38
+"664","super","CycloneDX",30
+"665","super","SPDX",60
+"666","tabled","SPDX",3
+"667","task","CycloneDX",14
+"668","task","SPDX",29
+"669","tc54 accepted","CycloneDX",2
+"670","tc54 accepted","SPDX",2
+"671","tc54 reviewed","CycloneDX",2
+"672","tc54 reviewed","SPDX",2
+"673","tech debt","CycloneDX",3
+"674","tech debt","SPDX",20
+"675","tech team review","SPDX",5
+"676","tech-debt","SPDX",3
+"677","technical debt","CycloneDX",29
+"678","technical debt","SPDX",9
+"679","technical issue","SPDX",38
+"680","technical-debt","CycloneDX",34
+"681","technical-debt","SPDX",68
+"682","templating","CycloneDX",6
+"683","templating","SPDX",1
+"684","test","CycloneDX",44
+"685","test provided","CycloneDX",20
+"686","test-data","CycloneDX",5
+"687","test-data","SPDX",5
+"688","testing","CycloneDX",6
+"689","testing","SPDX",3
+"690","tests","CycloneDX",12
+"691","tests","SPDX",41
+"692","text extraction","CycloneDX",3
+"693","text extraction","SPDX",6
+"694","timeout","CycloneDX",3
+"695","timeout","SPDX",6
+"696","tool-center","CycloneDX",1
+"697","tools","CycloneDX",10
+"698","tools","SPDX",19
+"699","triage","CycloneDX",118
+"700","triage","SPDX",7
+"701","triage/needs-decision","CycloneDX",1
+"702","triage:needs-reproducer","CycloneDX",4
+"703","type:cli","CycloneDX",254
+"704","type:controller","CycloneDX",1
+"705","typescript","CycloneDX",5
+"706","unknown licenses","SPDX",1
+"707","update-request","CycloneDX",7
+"708","upstream","CycloneDX",16
+"709","upstream","SPDX",44
+"710","upstream-bug","CycloneDX",3
+"711","used in major distro","SPDX",160
+"712","uses-dataflow","CycloneDX",5
+"713","v2-compatibility","SPDX",13
+"714","validate.cel","CycloneDX",5
+"715","validate.manifests","CycloneDX",2
+"716","validate.podSecurity","CycloneDX",27
+"717","validated","CycloneDX",22
+"718","validated","SPDX",22
+"719","validation","CycloneDX",130
+"720","validation","SPDX",28
+"721","venv","SPDX",9
+"722","vuln-aliases","CycloneDX",9
+"723","vulnerability-data-source","CycloneDX",14
+"724","waiting for feedback","CycloneDX",2
+"725","waiting for feedback","SPDX",1
+"726","webhook","CycloneDX",70
+"727","website improvement","SPDX",1
+"728","weekly-digest","SPDX",1
+"729","windows","CycloneDX",2
+"730","wip","SPDX",2
+"731","wontfix","CycloneDX",64
+"732","wontfix","SPDX",109
+"733","working-with-latest","CycloneDX",5
+"734","writer","SPDX",26
+"735","xfer-to-spdx-3-model","SPDX",1
+"736","yarn","SPDX",9
+"737","z-P1","SPDX",21
+"738","z-P2","SPDX",21
+"739","z-aa-triaged","SPDX",60
+"740","z-bug","SPDX",19
+"741","z-ci/cd","SPDX",2
+"742","z-documentation","SPDX",8
+"743","z-enhancement","SPDX",19
+"744","z-external","SPDX",1
+"745","z-good first issue","SPDX",1
+"746","z-question","SPDX",10
+"747","z-security","SPDX",1

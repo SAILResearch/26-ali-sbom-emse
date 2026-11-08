@@ -1,0 +1,124 @@
+category,Tags,identifier
+Bug Fixes and Defects,exceptions,CycloneDX
+Bug Fixes and Defects,false-positive,CycloneDX
+Bug Fixes and Defects,defect,CycloneDX
+Bug Fixes and Defects,bug,CycloneDX
+Bug Fixes and Defects,stale,CycloneDX
+Bug Fixes and Defects,lifecycle/stale,CycloneDX
+Bug Fixes and Defects,lifecycle/frozen,CycloneDX
+Bug Fixes and Defects,QA,CycloneDX
+Bug Fixes and Defects,good first issue,CycloneDX
+Code Quality,log enhancement,CycloneDX
+Code Quality,changelog-ignore,CycloneDX
+Code Quality,package-formats,CycloneDX
+Code Quality,package scan,CycloneDX
+Code Quality,performance,CycloneDX
+Code Quality,validation,CycloneDX
+Code Quality,generation,CycloneDX
+Community Engagement and Support,help wanted,CycloneDX
+Configuration,helm,CycloneDX
+Configuration,installation and packaging,CycloneDX
+Configuration,dependencies,CycloneDX
+Continuous Integration and Deployment (CI/CD),CI,CycloneDX
+Documentation,docs,CycloneDX
+Documentation,Documentation,CycloneDX
+Documentation,documentation,CycloneDX
+Feature Development and Enhancement,feature,CycloneDX
+Feature Development and Enhancement,proposed core enhancement,CycloneDX
+Feature Development and Enhancement,enhancement,CycloneDX
+Feature Development and Enhancement,new feature,CycloneDX
+Feature Development and Enhancement,security,CycloneDX
+Feature Development and Enhancement,must have,CycloneDX
+Feature Development and Enhancement,nice to have,CycloneDX
+Integration and Interfacing,ecosystem:javascript,CycloneDX
+Integration and Interfacing,ecosystem:java,CycloneDX
+Integration and Interfacing,webhook,CycloneDX
+Libraries,API Call,CycloneDX
+Libraries,core and api,CycloneDX
+Licensing,improve-license-detection,CycloneDX
+Licensing,copyright scan,CycloneDX
+Code Components,package scan,CycloneDX
+Code Components,component:dep-sources,CycloneDX
+Release Management and Versioning,release-high,CycloneDX
+Release Management and Versioning,pending release,CycloneDX
+Release Management and Versioning,breaking-change,CycloneDX
+Release Management and Versioning,breaking change,CycloneDX
+User Interface and Outputs,GUI and outputs,CycloneDX
+User Interface and Outputs,type:cli,CycloneDX
+User Interface and Outputs,end user,CycloneDX
+Technical Debt,technical debt,CycloneDX
+Technical Debt,technical-debt,CycloneDX
+Bug Fixes and Defects,kind/bug,SPDX
+Bug Fixes and Defects,technical issue,SPDX
+Bug Fixes and Defects,good-first-issue,SPDX
+Bug Fixes and Defects,QA,SPDX
+Bug Fixes and Defects,good-first-issue,SPDX
+Code Quality,refactor,SPDX
+Code Quality,comment-styles,SPDX
+Community Engagement and Support,request for comment,SPDX
+Community Engagement and Support,upstream,SPDX
+Community Engagement and Support,help wanted,SPDX
+Configuration,configuration,SPDX
+Configuration,installation and packaging,SPDX
+Configuration,docker,SPDX
+Configuration,dependencies,SPDX
+Continuous Integration and Deployment (CI/CD),Type: CI,SPDX
+Continuous Integration and Deployment (CI/CD),CI/CD,SPDX
+Documentation,docs,SPDX
+Documentation,documentation,SPDX
+Feature Development and Enhancement,proposed core enhancement,SPDX
+Feature Development and Enhancement,nice to have,SPDX
+Feature Development and Enhancement,feature,SPDX
+Feature Development and Enhancement,must have,SPDX
+Feature Development and Enhancement,proposal,SPDX
+Feature Development and Enhancement,new feature,SPDX
+Feature Development and Enhancement,enhancement,SPDX
+Integration and Interfacing,os support,SPDX
+Libraries,spdx-utils,SPDX
+Licensing,copyright scan,SPDX
+Licensing,Profile:Licensing,SPDX
+Licensing,license-review,SPDX
+Licensing,improve-license-detection,SPDX
+Licensing,Submit New License,SPDX
+Licensing,new license/exception: Not Accepted,SPDX
+Licensing,new license/exception: Accepted,SPDX
+Licensing,new license/exception request,SPDX
+Code Components,serialization,SPDX
+Code Components,data model,SPDX
+Code Components,parser,SPDX
+Code Components,package scan,SPDX
+Code Components,analyzer,SPDX
+Code Components,scanner,SPDX
+Code Components,I/O,SPDX
+Code Components,package-at-toplevel,SPDX
+Code Components,package-files,SPDX
+Code Components,package-formats,SPDX
+Release Management and Versioning,breaking change,SPDX
+User Interface and Outputs,GUI and outputs,SPDX
+Technical Debt,technical-debt,SPDX
+Bug Fixes and Defects,Bug Fixes and Defects,CycloneDX
+Bug Fixes and Defects,Bug Fixes and Defects,SPDX
+Code Components,Code Components,CycloneDX
+Code Components,Code Components,SPDX
+Code Quality,Code Quality,CycloneDX
+Code Quality,Code Quality,SPDX
+Community Engagement and Support,Community Engagement and Support,CycloneDX
+Community Engagement and Support,Community Engagement and Support,SPDX
+Configuration,Configuration,CycloneDX
+Configuration,Configuration,SPDX
+Continuous Integration and Deployment (CI/CD),Continuous Integration and Deployment (CI/CD),CycloneDX
+Continuous Integration and Deployment (CI/CD),Continuous Integration and Deployment (CI/CD),SPDX
+Feature Development and Enhancement,Feature Development and Enhancement,CycloneDX
+Feature Development and Enhancement,Feature Development and Enhancement,SPDX
+Integration and Interfacing,Integration and Interfacing,CycloneDX
+Integration and Interfacing,Integration and Interfacing,SPDX
+Libraries,Libraries,CycloneDX
+Libraries,Libraries,SPDX
+Licensing,Licensing,CycloneDX
+Licensing,Licensing,SPDX
+Release Management and Versioning,Release Management and Versioning,CycloneDX
+Release Management and Versioning,Release Management and Versioning,SPDX
+Technical Debt,Technical Debt,CycloneDX
+Technical Debt,Technical Debt,SPDX
+User Interface and Outputs,User Interface and Outputs,CycloneDX
+User Interface and Outputs,User Interface and Outputs,SPDX

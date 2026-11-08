@@ -1,0 +1,15 @@
+pandas
+requests
+backoff
+python-dotenv
+plotly
+kaleido
+nbformat
+cliffs_delta
+scipy
+jinja2
+seaborn
+matplotlib
+openpyxl
+krippendorff
+scikit-learn
